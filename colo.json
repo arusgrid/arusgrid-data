@@ -1,0 +1,1455 @@
+{
+ "meta": {
+  "last_updated": "2026-10-02",
+  "unit": "local currency per kW of IT load per month, with US dollars beside it",
+  "fx_rule": "The local currency figure is primary. Where the source printed its own US dollar figure we show that and name the rate it used. Where we converted, we use the ECB reference rate on the last business day of the figure's month and print the rate and date.",
+  "fx": {
+   "INR_2024-12-31_source_cw": {
+    "rate": 83.67,
+    "note": "Rate stated by Cushman & Wakefield in the Sify Infinit Spaces DRHP for end of calendar 2024. The ECB reference rate on 31 December 2024 was 85.60."
+   },
+   "INR_2025-11-28": {
+    "rate": 89.48,
+    "source": "ECB reference rate via frankfurter.dev, 28 November 2025"
+   },
+   "INR_2026-09-29": {
+    "rate": 95.98,
+    "source": "ECB reference rate via frankfurter.dev, 29 September 2026"
+   },
+   "SGD_2024-12-31": {
+    "rate": 1.3634,
+    "source": "ECB reference rate via frankfurter.dev, 31 December 2024"
+   },
+   "SGD_2025-12-31": {
+    "rate": 1.2855,
+    "source": "ECB reference rate via frankfurter.dev, 31 December 2025"
+   },
+   "SGD_2026-03-31": {
+    "rate": 1.2881,
+    "source": "ECB reference rate via frankfurter.dev, 31 March 2026"
+   },
+   "SGD_2026-06-30": {
+    "rate": 1.2949,
+    "source": "ECB reference rate via frankfurter.dev, 30 June 2026"
+   },
+   "THB_2025-12-31": {
+    "rate": 31.675,
+    "source": "ECB reference rate via frankfurter.dev, 31 December 2025"
+   },
+   "THB_2026-06-30": {
+    "rate": 33.23,
+    "source": "ECB reference rate via frankfurter.dev, 30 June 2026"
+   },
+   "INR_2025-12-31": {
+    "rate": 89.87,
+    "source": "ECB reference rate via frankfurter.dev, 31 December 2025"
+   },
+   "INR_2026-06-30": {
+    "rate": 94.66,
+    "source": "ECB reference rate via frankfurter.dev, 30 June 2026"
+   },
+   "MYR_2026-06-30": {
+    "rate": 4.085,
+    "source": "ECB reference rate via frankfurter.dev, 30 June 2026"
+   },
+   "THB_2025-01-31": {
+    "rate": 33.595,
+    "source": "ECB reference rate via frankfurter.dev, 31 January 2025"
+   }
+  },
+  "classes": {
+   "wholesale_asking": {
+    "label": "Wholesale asking rent",
+    "text": "The monthly price a landlord quotes for a block of capacity before negotiation, per kilowatt of IT load. Brokers publish it. It covers space, cooling and the critical power infrastructure. The electricity itself is usually billed separately at or near cost, and each row says whether its source stated that."
+   },
+   "passing": {
+    "label": "Passing rent",
+    "text": "What a landlord actually collects today across signed leases of every vintage. We publish it only where the owner states the figure itself, in a prospectus, a circular or an earnings call. In a rising market it sits below asking rent, and the gap is the landlord's reversion. We never derive it ourselves from revenue and capacity, because the denominator cannot be audited by a reader."
+   },
+   "retail_rack": {
+    "label": "Retail rack price",
+    "text": "A published monthly list price for one rack with a stated power allowance, or a broker band for deployments under 250 kW. It bundles power and often bandwidth. Per kilowatt of allowance it is the highest of the three and it must never be compared with a wholesale figure. Racks under 3 kW are excluded because their price mostly measures fixed overhead."
+   }
+  },
+  "bands": {
+   "text": "Block size changes the price more than the city does, so every figure carries its band. Retail is below 250 kW. Wholesale is 250 kW to 4 MW. Hyperscale is 4 MW and above. datacenterHawk and Cushman & Wakefield India draw the lines at 250 kW and 4 MW. CBRE prices a narrow 250 to 500 kW block. DC Byte's Singapore range covers all sizes. Figures from different bands are never averaged or compared as one series.",
+   "retail": "below 250 kW",
+   "wholesale": "250 kW to 4 MW",
+   "hyperscale": "4 MW and above"
+  },
+  "coverage": {
+   "markets_tracked": 34,
+   "markets_with_any_published_price": 2,
+   "text": "Two of the 34 markets on the map have a published colocation price we can stand behind, Singapore and India at national level. Every other market was searched through six channels, listed below, and returned nothing that survives review. An empty cell means nobody publishes the figure. It never means the market is cheap or free."
+  },
+  "channels_searched": [
+   "Stock exchange filings that republish commissioned market research (SGX REIT circulars and prospectuses, Indian draft prospectuses, bond documents)",
+   "Owner disclosures of in-place rent (prospectus reversion analyses, earnings calls)",
+   "Broker reports and press releases (CBRE, Cushman & Wakefield, JLL, Colliers, Knight Frank)",
+   "Government procurement records and published tariffs",
+   "Operators' own published rate cards",
+   "Equity research made public and financial press quoting it"
+  ],
+  "review": {
+   "text": "A practitioner review on 30 September 2026 graded 96 candidate figures. 21 survived, 42 are held pending verification and 33 were rejected. The held and rejected figures are listed at the foot of the page with the reason for each, so a reader can see what was left out and why.",
+   "date": "2026-09-30"
+  },
+  "not_shown": "No modelled cost floor is shown yet. A floor needs a sourced build cost per market, which exists for four markets today. It will be added as a separately labelled band once the construction cost tables for every covered market have been read.",
+  "estimate": {
+   "text": "The ArusGrid estimate is a fourth figure, kept apart from the three observed classes. It is computed by fixed rules from stated inputs, never typed in, shown only as a range with its grade and its inputs, and never counted in any total. It applies only to wholesale and hyperscale colocation; own-use builds, powered shells, retail and interconnection houses and GPU cloud get no price. Grade A or B is an observed figure for the building. Grade B is also the published band for the building's own country with a binding cost floor from the building's stated capex at a sourced yield on cost. Grade C is the band alone. Grade D is withheld: the regional fallback, a range wider than half its midpoint, or a floor that contradicts the band.",
+   "engine": "coloest.js",
+   "version": "2026-10-01.2",
+   "calibration_text": "Every building with an independent observed figure is also estimated blind, one row per source document, excluding any figure that set a parameter or built a band, and the midpoint error is printed. The log starts on 1 October 2026."
+  }
+ },
+ "markets": [
+  {
+   "market": "Singapore",
+   "country": "SG",
+   "region": "SEA",
+   "points": [
+    {
+     "cls": "wholesale_asking",
+     "band": "wholesale",
+     "band_text": "250 kW to 4 MW",
+     "local": {
+      "ccy": "USD",
+      "low": 299,
+      "high": 523,
+      "mid": 411
+     },
+     "usd": {
+      "low": 299,
+      "high": 523,
+      "mid": 411,
+      "basis": "source stated in US dollars"
+     },
+     "power": "excluded",
+     "as_of": "2024-12",
+     "figure": "range, 2024 actual",
+     "source": {
+      "url": "https://links.sgx.com/FileOpen/NTT%20DC%20REIT%20-%20Registration%20Prospectus_7%20July%202025_final.ashx?App=Prospectus&FileID=66695",
+      "title": "NTT DC REIT prospectus, Appendix F, independent market research report by datacenterHawk",
+      "publisher": "datacenterHawk for NTT DC REIT",
+      "date": "2025-07-07",
+      "commissioned_by": "Commissioned by the issuer, NTT DC REIT."
+     },
+     "note": "The midpoint of US$411 is stated in the prospectus text. The ends of the range are read from the report's chart labels."
+    },
+    {
+     "cls": "wholesale_asking",
+     "band": "hyperscale",
+     "band_text": "4 MW and above",
+     "local": {
+      "ccy": "USD",
+      "low": 261,
+      "high": 373,
+      "mid": 317
+     },
+     "usd": {
+      "low": 261,
+      "high": 373,
+      "mid": 317,
+      "basis": "source stated in US dollars"
+     },
+     "power": "excluded",
+     "as_of": "2024-12",
+     "figure": "range, 2024 actual",
+     "source": {
+      "url": "https://links.sgx.com/FileOpen/NTT%20DC%20REIT%20-%20Registration%20Prospectus_7%20July%202025_final.ashx?App=Prospectus&FileID=66695",
+      "title": "NTT DC REIT prospectus, Appendix F, independent market research report by datacenterHawk",
+      "publisher": "datacenterHawk for NTT DC REIT",
+      "date": "2025-07-07",
+      "commissioned_by": "Commissioned by the issuer, NTT DC REIT."
+     },
+     "note": "Midpoint of US$317 stated in the text. Ends read from chart labels."
+    },
+    {
+     "cls": "wholesale_asking",
+     "band": "wholesale",
+     "band_text": "250 to 500 kW",
+     "local": {
+      "ccy": "USD",
+      "low": 403,
+      "high": 403,
+      "mid": 403
+     },
+     "usd": {
+      "low": 403,
+      "high": 403,
+      "mid": 403,
+      "basis": "source stated in US dollars"
+     },
+     "power": "unstated",
+     "as_of": "2026-03",
+     "figure": "average asking rent, Q1 2026",
+     "source": {
+      "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026",
+      "title": "Global Data Center Trends 2026",
+      "publisher": "CBRE",
+      "date": "2026-06-17",
+      "commissioned_by": "Broker research, not commissioned by a party to a deal."
+     },
+     "note": "The freshest Singapore figure. CBRE's 2024 edition said its pricing excluded electricity. The 2026 edition does not say, so the basis is shown as unstated. An average, so it does not join the range series."
+    },
+    {
+     "cls": "wholesale_asking",
+     "band": "wholesale",
+     "band_text": "250 to 500 kW",
+     "local": {
+      "ccy": "USD",
+      "low": 310,
+      "high": 470,
+      "mid": null
+     },
+     "usd": {
+      "low": 310,
+      "high": 470,
+      "mid": null,
+      "basis": "source stated in US dollars"
+     },
+     "power": "unstated",
+     "as_of": "2025-03",
+     "figure": "range, Q1 2025",
+     "source": {
+      "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2025",
+      "title": "Global Data Center Trends 2025",
+      "publisher": "CBRE",
+      "date": "2025-06-24",
+      "commissioned_by": "Broker research, not commissioned by a party to a deal."
+     },
+     "note": ""
+    },
+    {
+     "cls": "wholesale_asking",
+     "band": "wholesale",
+     "band_text": "250 to 500 kW",
+     "local": {
+      "ccy": "USD",
+      "low": 315,
+      "high": 480,
+      "mid": null
+     },
+     "usd": {
+      "low": 315,
+      "high": 480,
+      "mid": null,
+      "basis": "source stated in US dollars"
+     },
+     "power": "excluded",
+     "as_of": "2024-03",
+     "figure": "range, Q1 2024",
+     "source": {
+      "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2024",
+      "title": "Global Data Center Trends 2024",
+      "publisher": "CBRE",
+      "date": "2024-06-24",
+      "commissioned_by": "Broker research, not commissioned by a party to a deal."
+     },
+     "note": "The chart caption states the pricing is without electricity cost."
+    },
+    {
+     "cls": "passing",
+     "band": "wholesale",
+     "band_text": "non-hyperscale pass-through contracts at one asset",
+     "local": {
+      "ccy": "USD",
+      "low": 277,
+      "high": 277,
+      "mid": 277
+     },
+     "usd": {
+      "low": 277,
+      "high": 277,
+      "mid": 277,
+      "basis": "source stated in US dollars"
+     },
+     "power": "excluded",
+     "as_of": "2024-12",
+     "figure": "average in-place base rent at NTT SG1, Serangoon North",
+     "source": {
+      "url": "https://links.sgx.com/FileOpen/NTT%20DC%20REIT%20-%20Registration%20Prospectus_7%20July%202025_final.ashx?App=Prospectus&FileID=66695",
+      "title": "NTT DC REIT prospectus, business section, SG1 reversion analysis",
+      "publisher": "NTT DC REIT",
+      "date": "2025-07-07",
+      "commissioned_by": "Stated by the issuer about its own asset."
+     },
+     "note": "Covers the pass-through contracts that make up 80.9 percent of the asset's monthly base rent. The prospectus says the 2024 wholesale market price sits 48.4 percent above it, which is the issuer's own reversion case."
+    }
+   ],
+   "history": [
+    {
+     "cls": "wholesale_asking",
+     "band_text": "250 kW to 4 MW",
+     "year": 2022,
+     "low": 300,
+     "high": 600,
+     "ccy": "USD",
+     "power": "excluded",
+     "source_ref": "datacenterHawk for NTT DC REIT, chart read"
+    },
+    {
+     "cls": "wholesale_asking",
+     "band_text": "250 kW to 4 MW",
+     "year": 2023,
+     "low": 320,
+     "high": 630,
+     "ccy": "USD",
+     "power": "excluded",
+     "source_ref": "datacenterHawk for NTT DC REIT, chart read"
+    },
+    {
+     "cls": "wholesale_asking",
+     "band_text": "250 kW to 4 MW",
+     "year": 2024,
+     "low": 299,
+     "high": 523,
+     "ccy": "USD",
+     "power": "excluded",
+     "source_ref": "datacenterHawk for NTT DC REIT, midpoint stated"
+    },
+    {
+     "cls": "wholesale_asking",
+     "band_text": "4 MW and above",
+     "year": 2022,
+     "low": 275,
+     "high": 400,
+     "ccy": "USD",
+     "power": "excluded",
+     "source_ref": "datacenterHawk for NTT DC REIT, chart read"
+    },
+    {
+     "cls": "wholesale_asking",
+     "band_text": "4 MW and above",
+     "year": 2023,
+     "low": 290,
+     "high": 415,
+     "ccy": "USD",
+     "power": "excluded",
+     "source_ref": "datacenterHawk for NTT DC REIT, chart read"
+    },
+    {
+     "cls": "wholesale_asking",
+     "band_text": "4 MW and above",
+     "year": 2024,
+     "low": 261,
+     "high": 373,
+     "ccy": "USD",
+     "power": "excluded",
+     "source_ref": "datacenterHawk for NTT DC REIT, midpoint stated"
+    }
+   ],
+   "footnotes": [
+    "DC Byte, in the independent market report inside Keppel DC REIT's circular of 5 December 2024, put Singapore colocation rates at US$260 to 400 per kW per month (S$335 to 516) for all deployment sizes, up from US$130 to 350 in 2020 to 2022. Shown here as a footnote because it carries no block band and no power basis. That report was commissioned by the acquirer, Keppel DC REIT. https://www.keppeldcreit.com/en/file/investor-relations/publications/circulars/kdcr-circular-dated-5-dec-2024.pdf",
+    "No owner-operator in Singapore publishes a list price for a rack of 3 kW or more, so the retail cell is empty."
+   ]
+  },
+  {
+   "market": "India",
+   "country": "IN",
+   "region": "IN",
+   "scope_note": "National bands. Cushman & Wakefield publishes city-level rents, and two equity research tables carry them, but the only city table we obtained rests on a currency round trip at a 2021 rate with no data year, so it is held. Each Indian city hub shows the national band until a dated city figure is verified.",
+   "points": [
+    {
+     "cls": "wholesale_asking",
+     "band": "wholesale",
+     "band_text": "0.25 to 4 MW",
+     "local": {
+      "ccy": "INR",
+      "low": 7650,
+      "high": 11900,
+      "mid": null
+     },
+     "usd": {
+      "low": 90,
+      "high": 140,
+      "mid": null,
+      "basis": "source stated in US dollars at INR 83.67"
+     },
+     "power": "unstated",
+     "as_of": "2024-12",
+     "figure": "typical indicative monthly pricing, range",
+     "source": {
+      "url": "https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1761628612556.pdf",
+      "title": "Sify Infinit Spaces draft red herring prospectus, industry overview by Cushman & Wakefield and 1Lattice",
+      "publisher": "Cushman & Wakefield for Sify Infinit Spaces",
+      "date": "2025-10-16",
+      "commissioned_by": "Commissioned by the issuer, Sify Infinit Spaces."
+     },
+     "note": "National figure with no city split. The report names power pass-through as a common pricing model and does not say which model the table uses."
+    },
+    {
+     "cls": "wholesale_asking",
+     "band": "hyperscale",
+     "band_text": "above 4 MW",
+     "local": {
+      "ccy": "INR",
+      "low": 6800,
+      "high": 8900,
+      "mid": null
+     },
+     "usd": {
+      "low": 80,
+      "high": 105,
+      "mid": null,
+      "basis": "source stated in US dollars at INR 83.67"
+     },
+     "power": "unstated",
+     "as_of": "2024-12",
+     "figure": "typical indicative monthly pricing, range",
+     "source": {
+      "url": "https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1761628612556.pdf",
+      "title": "Sify Infinit Spaces draft red herring prospectus, industry overview by Cushman & Wakefield and 1Lattice",
+      "publisher": "Cushman & Wakefield for Sify Infinit Spaces",
+      "date": "2025-10-16",
+      "commissioned_by": "Commissioned by the issuer, Sify Infinit Spaces."
+     },
+     "note": "The report says hyperscale pricing saw a slight decline over the previous three years and expects rates to stay largely stable for the next three."
+    },
+    {
+     "cls": "retail_rack",
+     "band": "retail",
+     "band_text": "below 0.25 MW",
+     "local": {
+      "ccy": "INR",
+      "low": 9350,
+      "high": 11900,
+      "mid": null
+     },
+     "usd": {
+      "low": 110,
+      "high": 140,
+      "mid": null,
+      "basis": "source stated in US dollars at INR 83.67"
+     },
+     "power": "unstated",
+     "as_of": "2024-12",
+     "figure": "broker band per kW, small deployments",
+     "source": {
+      "url": "https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1761628612556.pdf",
+      "title": "Sify Infinit Spaces draft red herring prospectus, industry overview by Cushman & Wakefield and 1Lattice",
+      "publisher": "Cushman & Wakefield for Sify Infinit Spaces",
+      "date": "2025-10-16",
+      "commissioned_by": "Commissioned by the issuer, Sify Infinit Spaces."
+     },
+     "note": "A broker band for deployments under 250 kW, per kW. It is a market figure, and the list price below is a single operator's."
+    },
+    {
+     "cls": "retail_rack",
+     "band": "retail",
+     "band_text": "one 42U rack, 6 kVA allowance",
+     "local": {
+      "ccy": "INR",
+      "low": 14500,
+      "high": 16100,
+      "mid": null,
+      "unit_note": "INR 87,000 per rack per month. INR 14,500 per kVA of allowance, or about INR 16,100 per kW at a 0.9 power factor."
+     },
+     "usd": {
+      "low": 151,
+      "high": 168,
+      "mid": null,
+      "basis": "converted at INR 95.98, ECB reference rate 29 September 2026"
+     },
+     "power": "included",
+     "as_of": "2026-09",
+     "figure": "published list price, RackBank, Indore and Raipur",
+     "source": {
+      "url": "https://www.rackbank.in/colocation/",
+      "title": "Colocation, RackBank Datacenters",
+      "publisher": "RackBank",
+      "date": "2026-09-30",
+      "commissioned_by": "The operator's own rate card."
+     },
+     "note": "Tier 2 cities, so it does not price Mumbai or Chennai. The half rack is INR 54,000 with 3 kVA, or INR 18,000 per kVA. The rate card quotes kVA and the power factor is our assumption."
+    },
+    {
+     "cls": "passing",
+     "band": "wholesale",
+     "band_text": "colocation capacity handed over at Manesar and Panchkula, NCR",
+     "local": {
+      "ccy": "INR",
+      "low": 9000,
+      "high": 9000,
+      "mid": 9000,
+      "unit_note": "Stated as about INR 90 lakh per MW per month."
+     },
+     "usd": {
+      "low": 101,
+      "high": 101,
+      "mid": 101,
+      "basis": "converted at INR 89.48, ECB reference rate 28 November 2025"
+     },
+     "power": "unstated",
+     "as_of": "2025-11",
+     "figure": "going-in rate stated by management on its earnings call",
+     "source": {
+      "url": "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/19112025/3ac557ff-2c8f-4014-b2d4-e7e582aa0e59.pdf",
+      "title": "Anant Raj Limited, Q2 and H1 FY26 earnings call transcript, exchange filing",
+      "publisher": "Anant Raj Limited",
+      "date": "2025-11-19",
+      "commissioned_by": "Stated by the owner about its own capacity."
+     },
+     "note": "A verbal, rounded figure from management. Management also says its pricing sits about 50 percent below market, which no broker band supports, so treat the figure as one operator's going-in rate and nothing wider."
+    }
+   ],
+   "history": [],
+   "footnotes": [
+    "Cushman & Wakefield stated the rate of INR 83.67 to the US dollar for end of calendar 2024. The ECB reference rate on 31 December 2024 was 85.60. We show the source's own US dollar figures and its rate rather than reconverting."
+   ]
+  }
+ ],
+ "reference": [
+  {
+   "market": "Asia Pacific, regional",
+   "cls": "wholesale_asking",
+   "band_text": "250 kW to 4 MW",
+   "ccy": "USD",
+   "low": 150,
+   "high": 245,
+   "mid": 187.5,
+   "power": "excluded",
+   "as_of": "2024-12",
+   "source_ref": "datacenterHawk for NTT DC REIT",
+   "note": "A regional benchmark for scale only. It never sits in a country row."
+  }
+ ],
+ "empty": [
+  {
+   "market": "Johor",
+   "country": "MY",
+   "text": "No broker, filing, procurement record, rate card or research note gives a per kW figure. Two subscription reports exist and are not quoted here."
+  },
+  {
+   "market": "Klang Valley",
+   "country": "MY",
+   "text": "Only sub-1 kW reseller racks are published. Nothing usable."
+  },
+  {
+   "market": "Penang / North MY",
+   "country": "MY",
+   "text": "Nothing published."
+  },
+  {
+   "market": "Sarawak & E. Malaysia",
+   "country": "MY",
+   "text": "Nothing published."
+  },
+  {
+   "market": "Greater Jakarta",
+   "country": "ID",
+   "text": "One operator publishes a rack under 3 kW. DCI Indonesia discloses revenue and built capacity, from which a rate could be derived, and we do not publish derivations."
+  },
+  {
+   "market": "Batam and Bintan",
+   "country": "ID",
+   "text": "Nothing published."
+  },
+  {
+   "market": "Bangkok metro",
+   "country": "TH",
+   "text": "One owner's revenue-per-MW guidance exists and almost certainly includes electricity. No operator publishes a rack price."
+  },
+  {
+   "market": "EEC",
+   "country": "TH",
+   "text": "Nothing published."
+  },
+  {
+   "market": "HCMC metro",
+   "country": "VN",
+   "text": "Vietnamese hosting companies publish rack prices, but ownership of the halls behind them is unconfirmed and the state operators' cards sit on sales-agent domains. Held until ownership is proven."
+  },
+  {
+   "market": "Hanoi metro",
+   "country": "VN",
+   "text": "Same as HCMC."
+  },
+  {
+   "market": "Da Nang / Central VN",
+   "country": "VN",
+   "text": "Nothing published."
+  },
+  {
+   "market": "Greater Manila",
+   "country": "PH",
+   "text": "Government bid documents give budget ceilings for single racks with leased lines bundled, which are limits and never prices. The VITRO REIT prospectus is the lead for an owner-stated figure."
+  },
+  {
+   "market": "Clark / Central Luzon",
+   "country": "PH",
+   "text": "Nothing published."
+  },
+  {
+   "market": "Abu Dhabi",
+   "country": "AE",
+   "text": "Nothing in any channel. No broker publishes Gulf colocation pricing."
+  },
+  {
+   "market": "Dubai",
+   "country": "AE",
+   "text": "Nothing in any channel."
+  },
+  {
+   "market": "Northern Emirates",
+   "country": "AE",
+   "text": "Nothing in any channel."
+  },
+  {
+   "market": "Riyadh",
+   "country": "SA",
+   "text": "Nothing in any channel."
+  },
+  {
+   "market": "Dammam / Eastern Province",
+   "country": "SA",
+   "text": "Nothing in any channel."
+  },
+  {
+   "market": "Jeddah / Western",
+   "country": "SA",
+   "text": "Nothing in any channel."
+  },
+  {
+   "market": "NEOM / Oxagon",
+   "country": "SA",
+   "text": "Nothing in any channel."
+  },
+  {
+   "market": "Doha",
+   "country": "QA",
+   "text": "Nothing in any channel."
+  },
+  {
+   "market": "Manama",
+   "country": "BH",
+   "text": "Nothing in any channel."
+  },
+  {
+   "market": "Indian cities",
+   "country": "IN",
+   "text": "Mumbai, Pune, Chennai, Hyderabad, Bengaluru, NCR, Kolkata, Visakhapatnam and Gujarat show the national band above. The city table is held, see the log."
+  }
+ ],
+ "log": {
+  "held": [
+   {
+    "what": "JM Financial city rents by block band, Mumbai, Chennai, Hyderabad, NCR, Bengaluru, Pune, Kolkata (Data Centre 101, 27 March 2025, citing JLL and Cushman & Wakefield)",
+    "why": "Nearly every rupee value divides exactly by 75, so the table is US dollar midpoints converted at a 2021 rate, and its data year is unstated. Held until the dollar originals and their year are confirmed."
+   },
+   {
+    "what": "SKP Securities city rents by block band (Techno Electric initiation, 14 July 2025)",
+    "why": "Sourced to 'industry, SKP research'. Three cities share identical rows and Chennai and Kolkata retail sit above Mumbai, which inverts the known market order."
+   },
+   {
+    "what": "Jefferies national average of INR 7,400 per kW per month (via Outlook Business, October 2025)",
+    "why": "Block band and power basis unknown, and the original note is not public."
+   },
+   {
+    "what": "DCI Indonesia implied rent, about IDR 1.65 to 1.78 million per kW per month from 2025 revenue and 128 MW",
+    "why": "Capacity is built and includes a 36 MW hall still ramping. Power treatment inside revenue unverified. We do not publish derivations."
+   },
+   {
+    "what": "Sify Technologies implied rent, INR 11,317 per kW per month from FY26 data centre revenue and 129 MW sold",
+    "why": "Year-end sold capacity against full-year revenue, and the figure sits between base rent and all-in, which suggests power recovery inside revenue."
+   },
+   {
+    "what": "datacenterHawk APAC hyperscale band, US$125 to 175",
+    "why": "Range ends are low-confidence chart reads. Only the midpoint of 150 is safe."
+   },
+   {
+    "what": "VNPT IDC rate cards, 6 kW racks at VND 22.1 to 39.4 million per month",
+    "why": "Published on sales-agent domains. VNPT's own domain is vnpt.vn. Held until the operator's own card is found."
+   },
+   {
+    "what": "Long Van and ODS rack prices, Vietnam",
+    "why": "Hosting companies whose ownership of the halls is unconfirmed."
+   },
+   {
+    "what": "Turner & Townsend build cost, Jakarta US$11.20 per watt and Mumbai US$6.64 per watt; RHB Malaysia US$7 to 12 million per MW",
+    "why": "Held for the cost floor. Scope of each cost figure unconfirmed and one is undated."
+   }
+  ],
+  "rejected": [
+   {
+    "what": "datacenterHawk 2025 to 2027 forecast bands for Singapore",
+    "why": "Forecasts, and the 2025 and 2026 bands are identical, which points to a planning assumption."
+   },
+   {
+    "what": "Keppel DC REIT contracted rents for KDC SGP 7 and 8, derived as 15 to 20 percent below market",
+    "why": "The circular gives a ceiling, and the market range it discounts covers all sizes."
+   },
+   {
+    "what": "YTL Power Johor, RM1,020 per kW per month from segment revenue and 150 MW live",
+    "why": "The segment includes GPU cloud revenue."
+   },
+   {
+    "what": "Nxtra, INR 8,100 per kW per month from FY26 revenue and 250 MW",
+    "why": "Capacity includes over 120 edge sites and revenue includes managed services."
+   },
+   {
+    "what": "Anant Raj segment revenue per operational MW",
+    "why": "The segment mixes infrastructure services and cloud. The two half-year readings differ by 2.5 times."
+   },
+   {
+    "what": "Telkom NeutraDC revenue per MW",
+    "why": "Cloud and data centre revenue are combined and the period is unclear."
+   },
+   {
+    "what": "VITRO REIT Manila, revenue per MW for 2027",
+    "why": "A forecast year with power inside revenue."
+   },
+   {
+    "what": "Sify Infinit Spaces total income per built MW",
+    "why": "Total income includes other income and the capacity date post-dates the revenue period."
+   },
+   {
+    "what": "Gulf Energy, THB 100 million per MW per year guidance for GSA data centre",
+    "why": "Revenue guidance that almost certainly includes electricity."
+   },
+   {
+    "what": "Philippine government bid ceilings (Office of the Solicitor General, Commission on Filipinos Overseas, PPP Center), about PHP 167,000 to 200,000 per rack per month",
+    "why": "Budget ceilings, with leased lines and remote hands bundled and racks at 2 kVA."
+   },
+   {
+    "what": "Thai Office of the Auditor General award and Kominfo tender budget",
+    "why": "No rack count or kW, so no price can be derived."
+   },
+   {
+    "what": "NSE Mumbai exchange colocation tariff, INR 900,000 per rack per year",
+    "why": "Priced for latency to the exchange matching engine, and quoted in kVA."
+   },
+   {
+    "what": "Exabytes Singapore and Malaysia, ProDC Jakarta, SuperData Vietnam rack prices",
+    "why": "Allowances of 0.4 to 2.3 kVA, or no power stated. Below the 3 kW floor."
+   },
+   {
+    "what": "Cyfuture knowledge-base price ranges",
+    "why": "An undated article, and a rate card is required."
+   },
+   {
+    "what": "Houlihan Lokey India band, US$80 to 100",
+    "why": "Third-hand from broker data with no block band or data year."
+   },
+   {
+    "what": "CBRE press release, Singapore 'exceeding US$330'",
+    "why": "A lower bound with no block band that duplicates the 2024 series."
+   },
+   {
+    "what": "vnptidc.com rack prices",
+    "why": "An unconfirmed domain that conflicts with another VNPT sales channel."
+   },
+   {
+    "what": "True IDC North Muangthong, 1U shared-rack promotion",
+    "why": "THB 2,500 per 1U per month single-source and THB 2,890 dual-source, electricity flat-rate inside, 1 Gbps port, promotion 25 June to 30 November 2025. A 1U slot is far below the 3 kW floor and prices fixed overhead."
+   },
+   {
+    "what": "True IDC Muang Thong Thani campaign, April 2023",
+    "why": "States a 2.5 kW, 20-outlet allowance but prints no price; below the 3 kW floor in any case."
+   },
+   {
+    "what": "Racks Central full rack 3 kVA at S$1,770 per month",
+    "why": "Listed on a third-party plan aggregator dated 7 June 2019, quoted in kVA with no power factor, power stated as included; the operator's own domain could not be fetched. Stale, aggregator, kVA, and the building is not in the dataset."
+   },
+   {
+    "what": "Yotta, CtrlS and Sify rack prices on reseller and knowledge-base pages (itforsme.in, cyfuture.cloud)",
+    "why": "Reseller or aggregator domains, undated or templated, no building named. The rate-card rule requires the operator's own domain."
+   },
+   {
+    "what": "VNPT colocation price table on vinaphonehanoi.vnpt.vn",
+    "why": "The 'bảng giá' link on VNPT's regional sales domain is a hotline banner image (0888 202 929, 'contact us for the best quote'), not a rate card. idc.vnpt.vn prints no prices. The earlier held sales-agent cards remain the only VNPT figures."
+   },
+   {
+    "what": "Viettel IDC price-table article",
+    "why": "Operator's own domain, but the price tables are images in a September 2020 explainer with no data centre named; the live service pages render by script and show no prices. All other Viettel 'price list' pages found are reseller domains (vietteldc.com, viettelidcvn.com, viettel-idc.com.vn)."
+   },
+   {
+    "what": "Gamuda Port Dickson, Pearl Computing",
+    "why": "Land sale (RM455 million) plus construction contracts (RM1.01 billion and RM1.72 billion) to the Google affiliate. Gamuda is contractor and land vendor, not landlord, so there is no lease and no rent."
+   },
+   {
+    "what": "Techno Electric Chennai data centre, management commentary",
+    "why": "Q1 FY26 call (13 August 2025) gives FY26 data centre revenue of about INR 25 to 30 crore and 'bare rentals' at 80 percent margin, with no MW billed and no rate. A revenue figure without a billed denominator is not a price."
+   },
+   {
+    "what": "Anant Raj INR 0.9 crore per MW per month, repeated in a Substack note",
+    "why": "Secondary repetition of the Q2 FY26 call figure already published in colo.json; no newer owner statement found for Rai, Manesar or Panchkula in FY27 calls."
+   },
+   {
+    "what": "CtrlS v AICTE arbitration award (lead from the 1 October sweep)",
+    "why": "Three Delhi High Court OMP (COMM) judgments of January to February 2026 returned by search were read; none mentions CtrlS, colocation or a data centre. Lead closed as dead."
+   },
+   {
+    "what": "Keppel DC REIT acquisition, 1 September 2026",
+    "why": "Outside coverage. Recorded only because it is the REIT's latest circular: JPY 190.0 billion, JLL valuation JPY 194.0 billion, 2.8 percent average escalation, in-place rents at least 30 percent under market; no per-kW figure."
+   },
+   {
+    "what": "Keppel DC SGP 7 and 8 contracted rents, 2024 circular",
+    "why": "Re-read in full. The circular only says contracted rents are 'at least 15 to 20 percent below' DC Byte's S$335 to 516 per kW band, which is a ceiling across all block sizes; already rejected in colo.json and nothing new in the valuation summaries (they price S$ per sq ft of GFA, S$2,190 to 2,923 psf)."
+   }
+  ]
+ },
+ "bands": {
+  "SG": {
+   "ccy": "USD",
+   "power": "excluded",
+   "as_of": "2024-12",
+   "kind": "published",
+   "hyperscale": [
+    261,
+    373
+   ],
+   "wholesale": [
+    299,
+    523
+   ],
+   "source": {
+    "url": "https://links.sgx.com/FileOpen/NTT%20DC%20REIT%20-%20Registration%20Prospectus_7%20July%202025_final.ashx?App=Prospectus&FileID=66695",
+    "title": "datacenterHawk independent market research in the NTT DC REIT prospectus, 2024 actual, Singapore wholesale 250 kW to 4 MW and hyperscale 4 MW plus",
+    "date": "2025-07-07",
+    "publisher": "datacenterHawk for NTT DC REIT"
+   },
+   "note": "CBRE's Q1 2026 average asking rent of US$403 for 250 to 500 kW and Digital Realty's US$340 per occupied kW across its three Singapore buildings (June 2026, ex-power) sit inside this band."
+  },
+  "IN": {
+   "ccy": "INR",
+   "power": "unstated",
+   "as_of": "2024-12",
+   "kind": "published",
+   "hyperscale": [
+    6800,
+    8900
+   ],
+   "wholesale": [
+    7650,
+    11900
+   ],
+   "retail": [
+    9350,
+    11900
+   ],
+   "source": {
+    "url": "https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1761628612556.pdf",
+    "title": "Cushman & Wakefield national bands in the Sify Infinit Spaces draft red herring prospectus",
+    "date": "2025-10-16",
+    "publisher": "Cushman & Wakefield for Sify Infinit Spaces"
+   },
+   "note": "National bands. The Digital Edge BOM1 loan floor (INR 7,050 to 8,400) and the PDG MU1 contract (INR 6,536 net of power) sit at and just below the hyperscale band.",
+   "fx_rate": 83.67,
+   "fx_note": "US dollars at the source's own rate of INR 83.67 (Cushman & Wakefield, end 2024)"
+  },
+  "TH": {
+   "ccy": "THB",
+   "kind": "held",
+   "hyperscale": null,
+   "wholesale": null,
+   "as_of": "2025-12",
+   "power": "unstated",
+   "note": "No published band. A registry range built on 1 October 2026 from revenue over licensed MW was withdrawn the same day after review, because the revenue almost certainly carries electricity and the licensed MW exceeds billed MW on ramping sites, so the range measured vacancy rather than price. It returns only on billed MW excluding power, from the revenue notes of the audited statements and commissioned MW by phase.",
+   "source": {
+    "url": "https://datawarehouse.dbd.go.th",
+    "title": "Department of Business Development registry (held)",
+    "date": "2026-10-01",
+    "publisher": "ArusGrid"
+   }
+  },
+  "APAC": {
+   "ccy": "USD",
+   "power": "excluded",
+   "as_of": "2024-12",
+   "kind": "regional",
+   "hyperscale": [
+    125,
+    175
+   ],
+   "wholesale": [
+    150,
+    245
+   ],
+   "source": {
+    "url": "https://links.sgx.com/FileOpen/NTT%20DC%20REIT%20-%20Registration%20Prospectus_7%20July%202025_final.ashx?App=Prospectus&FileID=66695",
+    "title": "datacenterHawk Asia Pacific wholesale and hyperscale pricing 2024, NTT DC REIT prospectus Appendix F",
+    "date": "2025-07-07",
+    "publisher": "datacenterHawk for NTT DC REIT"
+   },
+   "note": "Regional fallback only. An estimate built on it is grade D and is not shown."
+  }
+ },
+ "params": {
+  "yoc": {
+   "IN": {
+    "low": 0.12,
+    "high": 0.14,
+    "sourced": true,
+    "source": "JM Financial Data Centre 101 unit model, INR 465m per MW, 12 to 14 percent yield on cost brackets the PDG MU1 contract rate; PDG MU1 is therefore excluded from calibration"
+   },
+   "SG": {
+    "low": 0.08,
+    "high": 0.09,
+    "sourced": false,
+    "source": "assumption. Keppel's 9.1 percent is an acquisition yield on value, not a development yield on cost, so the Singapore floor does not raise the grade until a development yield is sourced"
+   },
+   "TH": {
+    "low": 0.11,
+    "high": 0.13,
+    "sourced": false,
+    "source": "assumption pending billed-MW data; the Gulf Energy guidance carries electricity"
+   }
+  },
+  "noi_margin": {
+   "SG": 0.77,
+   "IN": 0.8,
+   "default": 0.75,
+   "note": "NOI over colocation revenue, used to lift a net income requirement to a gross rent. Singapore 0.77 from NTT SG1's forecast net property income against colocation revenue in the NTT DC REIT prospectus (18.0 over 23.4). India 0.80 from JM Financial's unit model. Default 0.75 is an assumption."
+  },
+  "adjust": {
+   "hyperscale_on_wholesale_band": [
+    0.8,
+    0.85
+   ],
+   "passing_pre_cutoff": [
+    0.75,
+    0.85
+   ]
+  },
+  "passing_cutoff": "2023-01-01",
+  "passing_direction": {
+   "SG": "below",
+   "IN": "none",
+   "note": "Singapore asking rents rose from 2022 to 2024 (datacenterHawk, DC Byte), so older leases sit below asking. Cushman & Wakefield reports Indian hyperscale pricing slipped over three years, so no discount applies in India."
+  },
+  "capex_sanity_usd_m_per_mw": {
+   "default": [
+    3,
+    20
+   ],
+   "IN": [
+    3,
+    12
+   ],
+   "SG": [
+    6,
+    25
+   ],
+   "TH": [
+    5,
+    15
+   ],
+   "MY": [
+    4,
+    20
+   ],
+   "note": "A capex per MW outside the country range is treated as a scope error and ignored. Houlihan Lokey (India US$5.5m to 8.5m, Singapore US$9m to 14.5m per MW), RHB (Malaysia US$7m to 12m), Turner & Townsend, widened. Thailand's floor raised to US$5m after review because BOI values below that are shell scope."
+  }
+ },
+ "sites": [
+  {
+   "facility_id": "sg-sg-ntt-sg1",
+   "grade": "A",
+   "cls": "contracted_rent",
+   "basis": "issuer-stated renewal rent on a related-party contract (the sponsor, NTT Singapore, 2.7 MW, 31 percent of the asset) from 1 April 2026, up 23 percent from S$385",
+   "per_kw": {
+    "low": 474,
+    "high": 474,
+    "ccy": "SGD"
+   },
+   "power": "unstated",
+   "as_of": "2026-03",
+   "source": {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/DPWXOQ5DPC26JY8F/881294_NTT%20DC%20REIT%20-%20SG1%20lease%20renewal%20MR.pdf",
+    "title": "NTT DC REIT renews SG1 Master Services Agreement at 23 percent higher rent",
+    "date": "2026-03-31",
+    "publisher": "NTT DC REIT Manager"
+   },
+   "note": "A contracted rent on a sponsor lease, which is a related-party figure and not market evidence on its own. The prospectus separately states an average pass-through base rent of US$277 per kW per month at December 2024 for the contracts that make up 80.9 percent of the asset's base rent, electricity excluded."
+  },
+  {
+   "facility_id": "in-mum-pdg-mu1-airoli",
+   "grade": "A",
+   "cls": "contracted_rent",
+   "basis": "CRISIL's forward figure for stabilised annual revenue net of pass-through costs (Rs 400 crore from September 2025) over contracted MW (51 of 52.4), both stated in one rationale dated March 2025, 17-year hyperscale contract",
+   "per_kw": {
+    "low": 6536,
+    "high": 6536,
+    "ccy": "INR"
+   },
+   "power": "excluded",
+   "as_of": "2025-03",
+   "source": {
+    "url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/PrincetonDigitalGroupIndiaManagementPrivateLimited_March%2028_%202025_RR_364642.html",
+    "title": "Princeton Digital Group (India) Management Private Limited, Rating Rationale",
+    "date": "2025-03-28",
+    "publisher": "CRISIL Ratings"
+   },
+   "note": "A rating agency's forward figure, dated before the period it describes, so it is a contracted rate and not a passing rent. It was used to check the India yield on cost and is excluded from calibration for that reason.",
+   "sets_param": true
+  },
+  {
+   "facility_id": "sg-sg-digitalrealty-sin10",
+   "grade": "B",
+   "cls": "cluster_blend",
+   "basis": "Digital Realty's Singapore metro, three buildings blended: annualised rent US$276.2m on 72 MW at 93.9 percent occupancy gives about US$340 per occupied kW, while the same supplemental prices Singapore leases under 1 MW at US$327 and over 1 MW at US$135 per kW per month",
+   "per_kw": {
+    "low": 135,
+    "high": 327,
+    "ccy": "USD"
+   },
+   "power": "excluded",
+   "as_of": "2026-06",
+   "source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/",
+    "title": "Digital Realty 2Q 2026 earnings release and supplemental, Singapore metro row",
+    "date": "2026-08-01",
+    "publisher": "Digital Realty via SEC EDGAR"
+   },
+   "note": "One disclosure for SIN10, SIN11 and SIN12 together, so no single building carries it, and the occupancy basis mixes square feet with MW. The range shown runs from the over 1 MW figure to the under 1 MW figure. Electricity excluded, utilities reimbursed separately."
+  },
+  {
+   "facility_id": "sg-sg-digitalrealty-sin11",
+   "grade": "B",
+   "cls": "cluster_blend",
+   "basis": "Digital Realty's Singapore metro, three buildings blended: annualised rent US$276.2m on 72 MW at 93.9 percent occupancy gives about US$340 per occupied kW, while the same supplemental prices Singapore leases under 1 MW at US$327 and over 1 MW at US$135 per kW per month",
+   "per_kw": {
+    "low": 135,
+    "high": 327,
+    "ccy": "USD"
+   },
+   "power": "excluded",
+   "as_of": "2026-06",
+   "source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/",
+    "title": "Digital Realty 2Q 2026 earnings release and supplemental, Singapore metro row",
+    "date": "2026-08-01",
+    "publisher": "Digital Realty via SEC EDGAR"
+   },
+   "note": "One disclosure for SIN10, SIN11 and SIN12 together, so no single building carries it, and the occupancy basis mixes square feet with MW. The range shown runs from the over 1 MW figure to the under 1 MW figure. Electricity excluded, utilities reimbursed separately."
+  },
+  {
+   "facility_id": "sg-sg-digitalrealty-sin12",
+   "grade": "B",
+   "cls": "cluster_blend",
+   "basis": "Digital Realty's Singapore metro, three buildings blended: annualised rent US$276.2m on 72 MW at 93.9 percent occupancy gives about US$340 per occupied kW, while the same supplemental prices Singapore leases under 1 MW at US$327 and over 1 MW at US$135 per kW per month",
+   "per_kw": {
+    "low": 135,
+    "high": 327,
+    "ccy": "USD"
+   },
+   "power": "excluded",
+   "as_of": "2026-06",
+   "source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/",
+    "title": "Digital Realty 2Q 2026 earnings release and supplemental, Singapore metro row",
+    "date": "2026-08-01",
+    "publisher": "Digital Realty via SEC EDGAR"
+   },
+   "note": "One disclosure for SIN10, SIN11 and SIN12 together, so no single building carries it, and the occupancy basis mixes square feet with MW. The range shown runs from the over 1 MW figure to the under 1 MW figure. Electricity excluded, utilities reimbursed separately."
+  },
+  {
+   "facility_id": "sg-sg-keppel-gentinglane",
+   "grade": null,
+   "cls": "building_facts",
+   "basis": "net property income S$94.6m a year, net property yield 9.1 percent on the S$1,030m agreed value, contracted rents 15 to 20 percent below market, no MW disclosed",
+   "per_kw": null,
+   "power": "unstated",
+   "as_of": "2024-09",
+   "source": {
+    "url": "https://www.keppeldcreit.com/en/file/investor-relations/publications/circulars/kdcr-circular-dated-5-dec-2024.pdf",
+    "title": "Keppel DC REIT circular dated 5 December 2024",
+    "date": "2024-12-05",
+    "publisher": "Keppel DC REIT Management"
+   },
+   "note": "Keppel states no MW for any building, so no per kW figure can be published. On a directory figure of 38.7 MW the deal yield would imply about S$262 per kW per month, which is consistent with the circular's below-market statement, and is not published because a directory MW is not a source."
+  },
+  {
+   "facility_id": "in-ncr-adaniconnex-noida",
+   "grade": "A",
+   "cls": "shell_lease",
+   "basis": "registered lease, Google (Raiden Infotech India) 464,460 sq ft, 10 years, 1 percent escalation",
+   "per_sqft": {
+    "value": 235,
+    "ccy": "INR",
+    "unit": "per sq ft per month"
+   },
+   "per_kw": null,
+   "power": "excluded",
+   "as_of": "2022-09",
+   "source": {
+    "url": "https://www.rprealtyplus.com/news-views/google-leases-464-lakh-sqft-space-at-adani-data-centre-in-noida-108048.html",
+    "title": "Google Leases 4.64 Lakh SqFt Space at Adani Data Centre in Noida",
+    "date": "2022-10-13",
+    "publisher": "Realty+ reporting the registered lease"
+   },
+   "note": "Shell rent per square foot, which is a different product from colocation per kW. Starting annual rent INR 130.89 crore."
+  },
+  {
+   "facility_id": "in-mum-everyondr-turbhe",
+   "grade": "A",
+   "cls": "shell_lease",
+   "basis": "registered lease, Google (Raiden Infotech India) 381,000 sq ft whole building, 28 years, 1.75 percent escalation",
+   "per_sqft": {
+    "value": 232,
+    "ccy": "INR",
+    "unit": "per sq ft per month"
+   },
+   "per_kw": null,
+   "power": "excluded",
+   "as_of": "2022-10",
+   "source": {
+    "url": "https://w.media/google-leases-3-81-lakh-sq-ft-data-center-space-in-navi-mumbai-for-28-years/",
+    "title": "Google Leases 3.81 Lakh Sq Ft Data Center Space In Navi Mumbai For 28 years",
+    "date": "2023-01-17",
+    "publisher": "W.Media on CRE Matrix data"
+   },
+   "note": "INR 8.83 crore a month. Within 1 percent of Google's Noida lease signed a month earlier with a different landlord."
+  },
+  {
+   "facility_id": "in-mum-aws-airoli",
+   "grade": "A",
+   "cls": "shell_lease",
+   "basis": "registered lease, Amazon Data Services India, 451,000 sq ft G+7 building, 180 months from August 2023",
+   "per_sqft": {
+    "value": 138,
+    "ccy": "INR",
+    "unit": "per sq ft per month"
+   },
+   "per_kw": null,
+   "power": "excluded",
+   "as_of": "2023-05",
+   "source": {
+    "url": "https://www.datacenterdynamics.com/en/news/aws-leases-land-in-navi-mumbai-for-new-data-center/",
+    "title": "AWS leases land in Navi Mumbai for new data center",
+    "date": "2023-05-25",
+    "publisher": "DCD on Propstack data via Hindustan Times"
+   },
+   "note": "INR 6.24 crore a month. A bare building AWS fits out itself, which is why it sits 40 percent below Google's 2022 leases."
+  },
+  {
+   "facility_id": "in-mum-pdg-mu2",
+   "grade": "A",
+   "cls": "shell_lease",
+   "basis": "registered lease, PDG as lessee of 1,058,568 sq ft at Mindspace Airoli West, 20 and 40 year terms, 15-year lock-in, 4 percent escalation",
+   "per_sqft": {
+    "value": 98.5,
+    "ccy": "INR",
+    "unit": "per sq ft per month"
+   },
+   "per_kw": null,
+   "power": "excluded",
+   "as_of": "2025-04",
+   "source": {
+    "url": "https://www.business-standard.com/finance/personal-finance/princeton-digital-seals-rs-125-cr-annual-lease-deal-in-navi-mumbai-s-airoli-125050500616_1.html",
+    "title": "Princeton Digital seals Rs 125 cr annual lease deal in Navi Mumbai's Airoli",
+    "date": "2025-05-05",
+    "publisher": "Business Standard on CRE Matrix data"
+   },
+   "note": "The operator's own shell cost, about INR 125 crore a year. A hyperscaler rent at this campus must clear it plus fit-out."
+  },
+  {
+   "facility_id": "my-sel-google-elmina",
+   "grade": "A",
+   "cls": "build_to_suit_lease",
+   "basis": "Sime Darby Property build-and-lease to Pearl Computing (Google), RM2bn over the first 20 years, two 5-year options",
+   "per_kw": null,
+   "power": "excluded",
+   "as_of": "2024-05",
+   "source": {
+    "url": "https://www.simedarbyproperty.com/press-releases/sime-darby-property-develop-hyperscale-data-centre-elmina-business-park",
+    "title": "Sime Darby Property to Develop Hyperscale Data Centre at Elmina Business Park for Multinational Tech Co",
+    "date": "2024-05-23",
+    "publisher": "Sime Darby Property"
+   },
+   "note": "About RM100m a year on a build cost reported at about RM815m, a 12 percent gross yield on cost. Shell rent, MW not disclosed. Own-use site, so no colocation price applies."
+  },
+  {
+   "facility_id": "my-sel-google-elmina2",
+   "grade": "A",
+   "cls": "build_to_suit_lease",
+   "basis": "Sime Darby Property build-and-lease to Pearl Computing (Google), up to RM5.6bn over 20 years",
+   "per_kw": null,
+   "power": "excluded",
+   "as_of": "2024-12",
+   "source": {
+    "url": "https://theedgemalaysia.com/node/736163",
+    "title": "SimeProp inks data-centre lease agreement worth up to RM5.6b",
+    "date": "2024-12-02",
+    "publisher": "The Edge Malaysia reporting the Bursa filing"
+   },
+   "note": "About RM280m a year. Analysts put the build at RM2.5bn to 3bn, a 9 to 11 percent gross yield on cost."
+  },
+  {
+   "facility_id": "th-nbi-trueidc-northmuangthong",
+   "grade": "A",
+   "cls": "retail_rack",
+   "basis": "operator's own promotion page, one full rack with a 3 kW dual-source allowance, electricity included, excluding 7 percent VAT, a closing price on the last ten units",
+   "per_rack": {
+    "value": 38800,
+    "ccy": "THB",
+    "unit": "per rack per month (3 kW allowance)"
+   },
+   "per_kw": null,
+   "power": "included",
+   "as_of": "2025-01",
+   "source": {
+    "url": "https://www.trueidc.com/th/news-detail/190/promotion-MTG-Last-Unit",
+    "title": "โปรปิดเฟส 10 ยูนิตสุดท้ายกับ Colocation ระดับพรีเมี่ยม (phase-closing promotion, last ten units, premium colocation at True IDC North Muangthong)",
+    "date": "2025-01-01",
+    "publisher": "True Internet Data Center (trueidc.com, operator's own domain)"
+   },
+   "note": "About THB 12,900 (USD 385 at the ECB rate of 33.595 for 31 January 2025) per kW of allowance. A retail rack price, never comparable with a wholesale figure. Valid to 30 June 2025 or until the units sold, so a floor to the list rate."
+  }
+ ],
+ "product_overrides": {
+  "note": "Operator groups whose business is retail cabinets and interconnection, or GPU cloud, so no wholesale price applies. Derived classes otherwise follow the engine rules.",
+  "by_group": {
+   "Equinix": "retail_interconnection",
+   "China Mobile": "retail_interconnection",
+   "Telin": "retail_interconnection",
+   "Racks Central": "retail_interconnection",
+   "OneAsia": "retail_interconnection",
+   "Kingsland": "retail_interconnection",
+   "Iron Mountain": "retail_interconnection",
+   "YTL AI Cloud": "gpu_cloud"
+  },
+  "by_id": {}
+ },
+ "sites_held": [
+  {
+   "facility_id": "th-spk-gsa-gsa1",
+   "grade": "B",
+   "cls": "passing",
+   "basis": "FY2025 revenue THB 282.3m from the DBD registry over 25.6 MW licensed (NBTC list), first operating year",
+   "power": "unstated",
+   "as_of": "2025-12",
+   "source": {
+    "url": "https://datawarehouse.dbd.go.th/company/profile/50105565140284",
+    "title": "GSA Data Center 01 Co Ltd, registration 0105565140284, DBD DataWarehouse profit and loss",
+    "date": "2026-10-01",
+    "publisher": "Department of Business Development, Thailand"
+   },
+   "note": "Revenue over licensed MW. Power treatment unstated. A ramping first year understates the stabilised rate.",
+   "in_band": true,
+   "held_reason": "registry revenue over licensed MW, electricity almost certainly inside and licensed MW above billed MW; withdrawn 2026-10-01 after review, returns on billed MW ex-power"
+  },
+  {
+   "facility_id": "th-pth-oneasia-bkk1",
+   "grade": "B",
+   "cls": "passing",
+   "basis": "FY2025 revenue THB 215.6m from the DBD registry over 20 MW licensed (NBTC list), first full year",
+   "power": "unstated",
+   "as_of": "2025-12",
+   "source": {
+    "url": "https://datawarehouse.dbd.go.th/company/profile/50135563018309",
+    "title": "OneAsia Network (Thailand) registration 0135563018309, DBD DataWarehouse profit and loss",
+    "date": "2026-10-01",
+    "publisher": "Department of Business Development, Thailand"
+   },
+   "note": "Revenue over licensed MW. Still ramping.",
+   "in_band": true,
+   "held_reason": "registry revenue over licensed MW, electricity almost certainly inside and licensed MW above billed MW; withdrawn 2026-10-01 after review, returns on billed MW ex-power"
+  },
+  {
+   "facility_id": "th-cbi-chinamobile-supernap",
+   "grade": "C",
+   "cls": "passing",
+   "basis": "Datazone Co (the former SUPERNAP Thailand company) FY2025 revenue THB 398.1m over 20 MW licensed, or 60 MW design",
+   "power": "unstated",
+   "as_of": "2025-12",
+   "source": {
+    "url": "https://datawarehouse.dbd.go.th/company/profile/50105557084885",
+    "title": "Datazone Co Ltd, registration 0105557084885, DBD DataWarehouse profit and loss",
+    "date": "2026-10-01",
+    "publisher": "Department of Business Development, Thailand"
+   },
+   "note": "The link from Datazone to the SUPERNAP site rests on the same Hemaraj Chonburi address and a directory record, with no name-change filing found. The range runs from design MW to licensed MW.",
+   "in_band": true,
+   "held_reason": "registry revenue over licensed MW, electricity almost certainly inside and licensed MW above billed MW; withdrawn 2026-10-01 after review, returns on billed MW ex-power"
+  },
+  {
+   "facility_id": "th-bkk-stt-bkk1",
+   "grade": "C",
+   "cls": "passing",
+   "basis": "STT GDC Thailand FY2025 revenue THB 618.5m over 47 MW licensed across two sites, or over Bangkok 1's 20 MW alone",
+   "power": "unstated",
+   "as_of": "2025-12",
+   "source": {
+    "url": "https://datawarehouse.dbd.go.th/company/profile/50105561042245",
+    "title": "STT GDC (Thailand) registration 0105561042245, DBD DataWarehouse profit and loss",
+    "date": "2026-10-01",
+    "publisher": "Department of Business Development, Thailand"
+   },
+   "note": "One company, two sites, Bangkok 2 not yet operating in 2025, so the true rate sits nearer the upper end.",
+   "in_band": true,
+   "held_reason": "registry revenue over licensed MW, electricity almost certainly inside and licensed MW above billed MW; withdrawn 2026-10-01 after review, returns on billed MW ex-power"
+  },
+  {
+   "facility_id": "in-mum-sify-rabale",
+   "name": "Sify Rabale campus, Towers 11 and 12",
+   "grade": null,
+   "cls": "passing",
+   "basis": "The rent of such Premises will commence after 6 months from the date of handover of respective data centers (\"Lease Commencement Dates\") and will be calculated at 9.50% yield per annum on the project cost of respective data centers. The sub-lease rent is also subject to escalation by 2.95% from the respective Lease Commencement Dates. Further, the Premises have been sub-leased for a period of 20 years from the respective Lease Commencement Dates.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://www.morganstanley.com/content/dam/msdotcom/en/indiaofferdocuments/pdfs/Project_Green_DRHP.pdf",
+    "title": "Sify Infinit Spaces Limited, Draft Red Herring Prospectus, Objects of the Offer, Land Availability, page 126",
+    "date": "2025-10-16",
+    "publisher": "Sify Infinit Spaces Limited (SEBI filing)"
+   },
+   "note": "",
+   "held_reason": "Owner-stated shell lease formula, not a colocation price. The sub-lease rent for the two built-to-suit towers (38.88 MW planned, 19.44 MW each, operations targeted by FY2028) is set at 9.50 percent per annum on the sub-lessor's project cost, 20-year term from each handover, 2.95 percent escalation, rent commencing six months after handover. The sub-lessor's project cost is not printed, so no rupee figure can be formed; Sify's own INR 11,276.93 million is the fit-out it funds itself. Sub-lessor Gargantuan Industrial Space Solutions, MIDC plot R-978 acquired for INR 330.27 million."
+  },
+  {
+   "facility_id": null,
+   "name": "Sify Infinit Spaces related-party premises leases from Sify Technologies (no row (Sify Noida 01, Sify Hyderabad, Sify Chennai Tidel Park; the dataset's in-ncr-sify-noida02 is the newer 26 MW tower) is not a dataset row)",
+   "grade": null,
+   "cls": "passing",
+   "basis": "Owner-stated monthly building rents with no area and no MW, so no per-kW or per-sq-ft figure can be formed, and these are intra-group premises leases rather than colocation prices. Chennai INR 0.72 million, Noida INR 5.73 million, Hyderabad INR 5.03 million per month from 1 April 2020 for ten years with 3 percent annual escalation; Hyderabad additional floors INR 6.47 million and INR 1.17 million per month from 1 January 2023 for five years; Chennai Tidel additional space INR 0.64 million per month from 1 April 2023, renewed at INR 3.58 million per month from 1 April 2025 with 10 percent escalation every three years.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://www.morganstanley.com/content/dam/msdotcom/en/indiaofferdocuments/pdfs/Project_Green_DRHP.pdf",
+    "title": "Sify Infinit Spaces Limited DRHP, Restated Consolidated Financial Information, related party note, page 408",
+    "date": "2025-10-16",
+    "publisher": "Sify Infinit Spaces Limited (SEBI filing)"
+   },
+   "note": "",
+   "held_reason": "Owner-stated monthly building rents with no area and no MW, so no per-kW or per-sq-ft figure can be formed, and these are intra-group premises leases rather than colocation prices. Chennai INR 0.72 million, Noida INR 5.73 million, Hyderabad INR 5.03 million per month from 1 April 2020 for ten years with 3 percent annual escalation; Hyderabad additional floors INR 6.47 million and INR 1.17 million per month from 1 January 2023 for five years; Chennai Tidel additional space INR 0.64 million per month from 1 April 2023, renewed at INR 3.58 million per month from 1 April 2025 with 10 percent escalation every three years."
+  },
+  {
+   "facility_id": "sg-sg-keppel-sgp1",
+   "name": "Keppel DC Singapore 1 (S25, 25 Serangoon North Avenue 5)",
+   "grade": null,
+   "cls": "passing",
+   "basis": "The lease term will be based on fixed rent of S$5,000,000/- per annum for the 1st year which will be subject to fixed annual rental escalation based on Consumer Price Index (\"CPI\") or 3.0%, whichever the higher; as well as a variable rent based on 99.0% of the net Earnings Before Interest, Tax, Depreciation and Amortization (\"EBITDA\")",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://www.keppeldcreit.com/en/file/investor-relations/publications/circulars/keppel-dc-reit-final-prospectus-5-december-2014-.pdf",
+    "title": "Keppel DC REIT prospectus, Appendix E independent valuation summary, S25",
+    "date": "2014-12-05",
+    "publisher": "Keppel DC REIT Management"
+   },
+   "note": "",
+   "held_reason": "Owner-stated IPO leaseback rent to the sponsor, not a colocation price and no MW printed: fixed rent S$5,000,000 per annum in year one escalating at CPI or 3 percent whichever is higher, plus variable rent of 99 percent of net EBITDA after fixed rent and a 4 percent management fee provision; lettable area 109,574 sq ft. Related-party, master lease, 2014 vintage; superseded by later colocation contracts."
+  },
+  {
+   "facility_id": "sg-sg-keppel-sgp2",
+   "name": "Keppel DC Singapore 2 (T25, 25 Tampines Street 92)",
+   "grade": null,
+   "cls": "passing",
+   "basis": "Same structure as SGP1: fixed rent S$3,000,000 per annum in year one, CPI or 3 percent escalation, plus 99 percent of net EBITDA, ten-year leaseback with a five-year option; lettable area 36,888 sq ft; no MW printed. Related-party master lease, 2014 vintage.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://www.keppeldcreit.com/en/file/investor-relations/publications/circulars/keppel-dc-reit-final-prospectus-5-december-2014-.pdf",
+    "title": "Keppel DC REIT prospectus, Appendix E independent valuation summary, T25",
+    "date": "2014-12-05",
+    "publisher": "Keppel DC REIT Management"
+   },
+   "note": "",
+   "held_reason": "Same structure as SGP1: fixed rent S$3,000,000 per annum in year one, CPI or 3 percent escalation, plus 99 percent of net EBITDA, ten-year leaseback with a five-year option; lettable area 36,888 sq ft; no MW printed. Related-party master lease, 2014 vintage."
+  },
+  {
+   "facility_id": "sg-sg-keppel-sgp4",
+   "name": "Keppel DC Singapore 4 (20 Tampines Street 92)",
+   "grade": null,
+   "cls": "passing",
+   "basis": "Owner-stated master lease to the sponsor subsidiary KDCS2PL: fixed rent S$4.8 million in year one rising to S$9.838991 million in year ten plus variable rent of 99 percent of cash EBITDA, ten years with a five-year option; NLA 84,544 sq ft, occupancy 92 percent, valuations S$385.1 million with rental support and S$377.9 to 378.2 million without; agreed value S$384.9 million. No MW printed, related party, so no per-kW rent.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://links.sgx.com/FileOpen/Keppel%20DC%20REIT%20-%20Acquisition%20Announcement%2016%20September%202019.ashx?App=ArchiveAnnouncement&FileID=578494&AnncID=HT4XF85DUHLNLCPV",
+    "title": "Keppel DC REIT, proposed acquisitions of KDC SGP 4 and 1-Net North DC, announcement",
+    "date": "2019-09-16",
+    "publisher": "Keppel DC REIT Management"
+   },
+   "note": "",
+   "held_reason": "Owner-stated master lease to the sponsor subsidiary KDCS2PL: fixed rent S$4.8 million in year one rising to S$9.838991 million in year ten plus variable rent of 99 percent of cash EBITDA, ten years with a five-year option; NLA 84,544 sq ft, occupancy 92 percent, valuations S$385.1 million with rental support and S$377.9 to 378.2 million without; agreed value S$384.9 million. No MW printed, related party, so no per-kW rent."
+  },
+  {
+   "facility_id": "sg-sg-keppel-dc1",
+   "name": "DC1 (1-Net North DC, 18 Riverside Road)",
+   "grade": null,
+   "cls": "passing",
+   "basis": "Triple-net master lease to 1-Net with about 17 years remaining and a 7.6-year option, agreed value S$200.2 million, valuations S$200.5 and 201.5 million, NLA 213,815 sq ft. The rent itself is not printed in the announcement and no MW is given.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://links.sgx.com/FileOpen/Keppel%20DC%20REIT%20-%20Acquisition%20Announcement%2016%20September%202019.ashx?App=ArchiveAnnouncement&FileID=578494&AnncID=HT4XF85DUHLNLCPV",
+    "title": "Keppel DC REIT, proposed acquisitions of KDC SGP 4 and 1-Net North DC, announcement",
+    "date": "2019-09-16",
+    "publisher": "Keppel DC REIT Management"
+   },
+   "note": "",
+   "held_reason": "Triple-net master lease to 1-Net with about 17 years remaining and a 7.6-year option, agreed value S$200.2 million, valuations S$200.5 and 201.5 million, NLA 213,815 sq ft. The rent itself is not printed in the announcement and no MW is given."
+  },
+  {
+   "facility_id": "sg-sg-keppel-sgp5",
+   "name": "Keppel DC Singapore 5 (Kingsland Data Centre, Jurong)",
+   "grade": null,
+   "cls": "passing",
+   "basis": "Acquisition release prints price (S$295.1 million for 99 percent), NLA 98,769 sq ft, committed occupancy 84.2 percent with vacancy in offices, and 'IT power is fully committed', but no rent, NPI yield or MW. Nothing to price from.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://links.sgx.com/FileOpen/20180507_KDCR%20Media%20Release_Kingsland%20DC.ashx?App=ArchiveAnnouncement&FileID=504256&AnncID=O7U24TGX7YT4TVNR",
+    "title": "Keppel DC REIT to acquire Kingsland Data Centre, media release",
+    "date": "2018-05-07",
+    "publisher": "Keppel DC REIT Management"
+   },
+   "note": "",
+   "held_reason": "Acquisition release prints price (S$295.1 million for 99 percent), NLA 98,769 sq ft, committed occupancy 84.2 percent with vacancy in offices, and 'IT power is fully committed', but no rent, NPI yield or MW. Nothing to price from."
+  },
+  {
+   "facility_id": "sg-sg-keppel-sgp3",
+   "name": "Keppel DC Singapore 3",
+   "grade": null,
+   "cls": "passing",
+   "basis": "The 2016 Keppel T&T divestment release could not be fetched (robots block). Remaining 10 percent interests in SGP 3 and SGP 4 were acquired for S$53.4 million, completed 12 February 2026, with no rent, NPI or MW printed.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://www.minichart.com.sg/2026/02/12/keppel-dc-reit-completes-acquisition-of-remaining-interests-in-singapore-data-centres-and-provides-update-on-preferential-offering-proceeds-1/",
+    "title": "Keppel DC REIT completes acquisition of remaining interests in Singapore data centres",
+    "date": "2026-02-12",
+    "publisher": "Keppel DC REIT Management via minichart.com.sg"
+   },
+   "note": "",
+   "held_reason": "The 2016 Keppel T&T divestment release could not be fetched (robots block). Remaining 10 percent interests in SGP 3 and SGP 4 were acquired for S$53.4 million, completed 12 February 2026, with no rent, NPI or MW printed."
+  },
+  {
+   "facility_id": null,
+   "name": "VITRO REIT IPO portfolio (no row (VITRO Makati 2, Pasig, Clark, Cebu 1 and 2, Paranaque, Makati 1, Davao); ph-lag-epldt-vitro-sta-rosa is not in the REIT portfolio is not a dataset row)",
+   "grade": null,
+   "cls": "passing",
+   "basis": "The REIT is an operating landlord with 630 customers, so its revenue is colocation revenue with power inside (power costs about 16 percent of 2027 revenue). Projected 2027 revenue PHP 6.14 billion on about 24 MW across eight sites; VITRO Makati 2 12.3 MW at 76.4 percent utilisation; offer price up to PHP 11, pricing 23 September 2026, offer 25 September to 1 October 2026. Any per-MW figure would be revenue divided by capacity, which we do not publish. The prospectus (dated 19 June 2026) itself was not read; it may contain a per-rack or per-kW average that press coverage omits.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://insiderph.com/pldts-vitro-reit-files-for-october-ipo-with-yields-topping-6",
+    "title": "PLDT's VITRO REIT files for October IPO with yields topping 6%",
+    "date": "2026-06",
+    "publisher": "InsiderPH, reporting the VITRO REIT prospectus"
+   },
+   "note": "",
+   "held_reason": "The REIT is an operating landlord with 630 customers, so its revenue is colocation revenue with power inside (power costs about 16 percent of 2027 revenue). Projected 2027 revenue PHP 6.14 billion on about 24 MW across eight sites; VITRO Makati 2 12.3 MW at 76.4 percent utilisation; offer price up to PHP 11, pricing 23 September 2026, offer 25 September to 1 October 2026. Any per-MW figure would be revenue divided by capacity, which we do not publish. The prospectus (dated 19 June 2026) itself was not read; it may contain a per-rack or per-kW average that press coverage omits."
+  },
+  {
+   "facility_id": "in-mum-capitaland-airoli",
+   "name": "CapitaLand Data Centre Navi Mumbai, Tower 2",
+   "grade": null,
+   "cls": "passing",
+   "basis": "Second hyperscaler lease signed January 2026 for Tower 2 (37 MW IT load, 55 MW gross), handover progressively in 1H 2027; 53 percent of gross power across Navi Mumbai, Hyderabad and Chennai pre-leased. CLINT did not disclose commercial terms.",
+   "power": "unstated",
+   "as_of": null,
+   "source": {
+    "url": "https://datacenternews.asia/story/capitaland-secures-second-hyperscaler-deal-in-navi-mumbai",
+    "title": "CapitaLand secures second hyperscaler deal in Navi Mumbai",
+    "date": "2026-01",
+    "publisher": "DataCenterNews Asia, reporting CapitaLand India Trust's release"
+   },
+   "note": "",
+   "held_reason": "Second hyperscaler lease signed January 2026 for Tower 2 (37 MW IT load, 55 MW gross), handover progressively in 1H 2027; 53 percent of gross power across Navi Mumbai, Hyderabad and Chennai pre-leased. CLINT did not disclose commercial terms."
+  }
+ ]
+}
