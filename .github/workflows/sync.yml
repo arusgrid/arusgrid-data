@@ -19,10 +19,25 @@ jobs:
             mv "$f.new" "$f"
           done
       - name: Commit when changed
+        id: commit
         run: |
-          git config user.name 'arusgrid-sync'
+          git config user.name 'ArusGrid'
           git config user.email 'hello@arusgrid.com'
           git add data.json colo.json policy.json
-          if git diff --cached --quiet; then echo 'no change'; exit 0; fi
+          if git diff --cached --quiet; then echo 'no change'; echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -m "data $(date -u +%Y-%m-%d)"
           git push
+          echo "changed=1" >> "$GITHUB_OUTPUT"
+      - name: Push to Hugging Face
+        if: steps.commit.outputs.changed == '1' && env.HF_TOKEN != ''
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          pip install -q huggingface_hub
+          python3 - <<'PY'
+          import os
+          from huggingface_hub import HfApi
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          for f in ["data.json", "colo.json", "policy.json", "SCHEMA.md"]:
+              api.upload_file(path_or_fileobj=f, path_in_repo=f, repo_id="arusgrid/data-center-buildout", repo_type="dataset", commit_message="data sync from arusgrid.com")
+          PY
