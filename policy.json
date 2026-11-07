@@ -2661,10 +2661,10 @@
       ]
      },
      {
-      "title": "Minimum standards due mid-October",
-      "text": "NESDC said the new data centre rules should be final by mid-October 2026. Under the draft, sites of 100MW or more would count as hyperscale and industrial-type sites would go in industrial estates. The one-month deadline from 4 September 2026 has passed without published standards. On 1 October 2026 officials said subcommittee criteria would be done within about a week.",
+      "title": "Minimum standards announced 27 October",
+      "text": "The data centre committee announced minimum requirements for operators on 27 October 2026. They cover location and land use, fuel storage, water management and an environmental code of practice. Data centres will be split into seven tiers by power demand. The criteria were to go to cabinet the following week. New data centre applications are expected to open in early 2027. Existing data centres get one year to comply. Reuters names no projects and does not say how approved projects still at permitting are treated.",
       "status": "proposed",
-      "effective": "2026-10",
+      "effective": "2026-10-27",
       "authority": "NESDC / National Data Center Business Policy Committee",
       "sources": [
        {
@@ -2678,6 +2678,12 @@
         "title": "Thailand approves separate legal definition of data centre buildings",
         "date": "2026-10-01",
         "publisher": "The Nation"
+       },
+       {
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/28/thailand-sets-new-rules-for-data-centres-as-applications-surge",
+        "title": "Thailand sets new rules for data centres as applications surge",
+        "date": "2026-10-28",
+        "publisher": "The Star (Reuters)"
        }
       ]
      },
