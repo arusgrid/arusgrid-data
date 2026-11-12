@@ -2662,7 +2662,7 @@
      },
      {
       "title": "Minimum standards announced 27 October",
-      "text": "The data centre committee announced minimum requirements for operators on 27 October 2026. They cover location and land use, fuel storage, water management and an environmental code of practice. Data centres will be split into seven tiers by power demand. The criteria were to go to cabinet the following week. New data centre applications are expected to open in early 2027. Existing data centres get one year to comply. Reuters names no projects and does not say how approved projects still at permitting are treated.",
+      "text": "The data centre committee announced minimum requirements for operators on 27 October 2026. They cover location and land use, fuel storage, water management and an environmental code of practice. Data centres will be split into seven tiers by power demand. The criteria were to go to cabinet the following week. New data centre applications are expected to open in early 2027. Existing data centres get one year to comply. Reuters names no projects. ThaiPublica gives the cut-off. A data centre with a construction permit (อ.1 or ม.39 ทวิ) issued after 11 August 2026, or with no permit yet, counts as a new operator and must meet the minimum requirements. Sites permitted before that date follow current rules and must file an environmental code of practice within one year of opening. An expansion of an operating site that adds more than 20MW counts as a new project. New projects are to be picked in rounds through a DC One Stop Service. Agencies need about 8 to 12 months to change their rules.",
       "status": "proposed",
       "effective": "2026-10-27",
       "authority": "NESDC / National Data Center Business Policy Committee",
@@ -2684,6 +2684,12 @@
         "title": "Thailand sets new rules for data centres as applications surge",
         "date": "2026-10-28",
         "publisher": "The Star (Reuters)"
+       },
+       {
+        "url": "https://thaipublica.org/2026/10/ata-center-committee-approves-minimum-standards/",
+        "title": "คณะกรรมการนโยบายดาต้าเซ็นเตอร์ฯเห็นชอบใช้มาตรฐานขั้นต่ำ 4 มิติช่วงเปลี่ยนให้เสร็จใน 1 ปี และแบ่งกลุ่ม 7 ระดับ",
+        "date": "2026-10-27",
+        "publisher": "ThaiPublica"
        }
       ]
      },
