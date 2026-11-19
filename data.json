@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-12",
+    "last_updated": "2026-11-18",
     "coverage": [
       "MY",
       "SG",
@@ -7149,7 +7149,7 @@
           "publisher": "US SEC (Currenc Group Inc.)"
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "Mar 2025 plan: 100 acres, 500MW, Ph1 100MW 'by end-2026'. Fintech pivot; funding (US$100m fund vs multi-billion cost) and land acquisition unconfirmed — high risk of non-delivery. Site not identified. [2026-10-13] CURRENC 20-F (2026-04-30) says activation of the AI data centre project 'has experienced delays' and was anticipated in Q2 2026. 6-K filings from June to October 2026 carry no data centre progress and show financial distress, including suspended merger talks (2026-09-21) and a Malaysian court charging order over Tranglo shares (October 2026). No land or works found. Owner flag. possible abandonment. [2026-10-14] SEC 6-K filings show continued distress. A US$1.5M secured bridge loan at 1% with a personal guarantee (24 Sep 2026), and the Malaya High Court made Ripple's charging order over 100,465 Tranglo shares absolute on an unpaid judgment of about US$23.95M (7 Oct 2026). No filing mentions the Johor data centre, cancels it or reports progress. Stage held at announced; the project is at risk. [2026-10-31] Currenc's 6-K of 30 Oct 2026 reinstates the sale of its Tranglo stake to New Margin and extends the longstop to 31 Mar 2027, with New Margin agreeing in principle to buy all of Tranglo for about US$666.7m. The filing does not mention the Johor data centre.",
       "power_cost": {
         "usd_per_kwh": null,
@@ -9705,10 +9705,22 @@
           "title": "Bain Capital's data centre unit cuts ties with Nvidia buyer after US probe",
           "date": "2026-04-08",
           "publisher": "Free Malaysia Today (Bloomberg)"
+        },
+        {
+          "url": "https://w.media/malaysia-has-never-cleared-megaspeed-and-speedmatrix/",
+          "title": "Malaysia ‘never cleared’ Megaspeed and Speedmatrix: MITI",
+          "date": "2026-11-16",
+          "publisher": "W.Media"
+        },
+        {
+          "url": "https://w.media/us-investigates-singapore-based-megaspeed-over-suspected-semiconductor-export-violations/",
+          "title": "US investigates Singapore based Megaspeed over suspected semiconductor export violations",
+          "date": "2026-11-17",
+          "publisher": "W.Media"
         }
       ],
-      "last_verified": "2026-11-11",
-      "notes": "Conditional SPA for 52 acres from Crescendo (RM263.2m, completing ~Q3 2026), conditional on 300MW TNB allocation and planning approval — 300MW is grid ask, not confirmed IT load. Parent MegaSpeed is a GPU-cloud firm; 2025 press reported US export-control scrutiny of its Nvidia chip flows. Coordinates approximate. [stale-check 2026-10-10] The SPA became unconditional on 2026-04-27, which means the 300MW TNB allocation and the PLANMalaysia Johor approval it was conditional on were obtained. Crescendo received the balance payment on 2026-09-09. Stage stays land_permitting because land and approvals are not construction. 300MW is the TNB grid allocation. No IT-load figure exists. [2026-10-13] Crescendo Bursa filing (EdgeProp 2026-09-09) says the SPA went unconditional on 2026-04-27, MSFusion defaulted on the RM225.91m balance (notice 2026-08-27) and then paid it with late interest on 2026-09-09. Land is effectively paid. No construction source, so the stage holds. [2026-10-28] Crescendo's quarter to 30 Apr 2026 (1QFY2027) was driven mainly by recognising a data centre land sale at Bandar Cemerlang Industrial Park, now renamed Kota Cemerlang Industrial Park. Revenue was RM317.87m and pre-tax profit RM182.03m. The buyer, area and price are not named. The timing fits the MSFusion SPA going unconditional on 27 Apr 2026, so this is very likely the MSFusion sale (inferred). A second data centre land sale at Nusa Cemerlang Industrial Park was recognised in the quarter to 31 Jul 2026. That is a different estate and is not this row. [2026-10-31] The land_permitting entry is dated by the conditional SPA with Crescendo. W.Media (3 Sep 2025) says the filing was made the previous Friday, which is 29 Aug 2025, so the month is used. [2026-11-11] Parent context. Bloomberg (via FMT, 8 Apr 2026) says Bridge Data Centres replaced Megaspeed International with Zenlayer for all 68.4MW earmarked for it at BDC's Malaysian hub, per a February memo to lenders that gave no reason. The US government is probing Megaspeed's ownership and whether it sent Nvidia AI chips to China against export rules. The report does not mention MSFusion or the Johor land.",
+      "last_verified": "2026-11-18",
+      "notes": "Conditional SPA for 52 acres from Crescendo (RM263.2m, completing ~Q3 2026), conditional on 300MW TNB allocation and planning approval — 300MW is grid ask, not confirmed IT load. Parent MegaSpeed is a GPU-cloud firm; 2025 press reported US export-control scrutiny of its Nvidia chip flows. Coordinates approximate. [stale-check 2026-10-10] The SPA became unconditional on 2026-04-27, which means the 300MW TNB allocation and the PLANMalaysia Johor approval it was conditional on were obtained. Crescendo received the balance payment on 2026-09-09. Stage stays land_permitting because land and approvals are not construction. 300MW is the TNB grid allocation. No IT-load figure exists. [2026-10-13] Crescendo Bursa filing (EdgeProp 2026-09-09) says the SPA went unconditional on 2026-04-27, MSFusion defaulted on the RM225.91m balance (notice 2026-08-27) and then paid it with late interest on 2026-09-09. Land is effectively paid. No construction source, so the stage holds. [2026-10-28] Crescendo's quarter to 30 Apr 2026 (1QFY2027) was driven mainly by recognising a data centre land sale at Bandar Cemerlang Industrial Park, now renamed Kota Cemerlang Industrial Park. Revenue was RM317.87m and pre-tax profit RM182.03m. The buyer, area and price are not named. The timing fits the MSFusion SPA going unconditional on 27 Apr 2026, so this is very likely the MSFusion sale (inferred). A second data centre land sale at Nusa Cemerlang Industrial Park was recognised in the quarter to 31 Jul 2026. That is a different estate and is not this row. [2026-10-31] The land_permitting entry is dated by the conditional SPA with Crescendo. W.Media (3 Sep 2025) says the filing was made the previous Friday, which is 29 Aug 2025, so the month is used. [2026-11-11] Parent context. Bloomberg (via FMT, 8 Apr 2026) says Bridge Data Centres replaced Megaspeed International with Zenlayer for all 68.4MW earmarked for it at BDC's Malaysian hub, per a February memo to lenders that gave no reason. The US government is probing Megaspeed's ownership and whether it sent Nvidia AI chips to China against export rules. The report does not mention MSFusion or the Johor land. [2026-11-18] Parent-level, not site-specific. MITI said in a statement on 13 Nov 2026 that it never cleared Megaspeed International or its Malaysian affiliate Speedmatrix. It said Speedmatrix is a tenant at Malaysian data centres and that MITI had not established wrongdoing so far. The statement does not mention the Kota Tinggi site, its TNB allocation or any DCTF decision. [2026-11-18] Parent-level. The US Department of Justice is leading a criminal investigation into Megaspeed over suspected export control violations, with Commerce assisting. The statement names no charges and no Malaysian site.",
       "power_cost": {
         "usd_per_kwh": null,
         "source": "country_tariff"
@@ -30903,7 +30915,7 @@
           "publisher": "TCIJ"
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "CONTRADICTION/AGGREGATION FLAG: the 120MW IT load and THB 37.2bn are BOI's COMBINED figures for two separate projects - one at WHA Eastern Seaboard Industrial Estate 5 (Rayong), one in Samut Prakan. The per-site split is not published. Recorded as a single Rayong-anchored entry to avoid inventing a split; geography of roughly half this MW is actually Samut Prakan. [refresh 2026-09-11] GSA03 RESOLVED AND FOLDED IN HERE. Gulf Edge bought 70% of GSA Data Center 03 Co on 2026-01-09 with AIS DC Venture at 30% (no Singtel in this vehicle), described as Rayong, EEC, up to 100MW, COD 2027. Gulf's SET-reported portfolio on 2026-05-08 and 2026-07-24 lists exactly three projects, GSA01 25.6MW operational, GSA02 38.1MW under construction COD Q2 2027, and GEDC01 100MW Rayong 70% under construction COD Q4 2027. Gulf's own Q2 results release (2026-08-06) says GSA02 and GEDC01 'are currently under construction and are expected to commence operations in 2027'. The estate is not named in any Gulf document. IDENTITY CAVEAT: the BOI Jan-2026 'GSA Data Center 05' approval (two projects, WHA ESIE 5 Rayong plus Samut Prakan, 120MW combined) is the only Rayong GSA project BOI has promoted, and Gulf's portfolio lists no GSA05 project, so the Rayong half of that approval and GEDC01 are treated as the same build. If they are distinct, Thailand is under-recorded by up to 100MW rather than over-recorded, which is the conservative side to err on. The 120MW planned figure is retained as the BOI combined envelope; the phase carries the 100MW Gulf states. Basis: Gulf does not state IT load explicitly, but its 38.1MW GSA02 figure matches the BOI IT-load approval, so the convention is IT load. CGSI (Hoonsmart, undated) calls 100MW the initial phase, expandable to 300 to 500MW; that is a ceiling and stays out of planned MW. A Jun-2026 Kaohoon item headlined a closed 100MW deal with a large customer; the page returned 403 and no client is entered. [2026-10-14] MW basis flag: GULF disclosure (reported by Kaohoon International 2026-07-24) gives GEDC01 in the EEC, Rayong 'maximum service capacity of up to 100 megawatts', GULF indirect 70% stake, currently under construction, COD scheduled 4Q2027. Row carries 120MW; check basis. Partner, land, contractor and power not disclosed. (Kaohoon International, 2026-07-24) [2026-10-16] Basis set to IT load: BOI PR 8/2569 gives GSA Data Center 05's two projects (WHA ESIE 5 Rayong and Samut Prakan) a combined IT load of 120MW, which is this row's figure. [2026-10-16] DCD (2026-10-14) says GEDC01 in Rayong is under construction, up to 100MW with the basis unstated, due live in Q4 2027. Gulf's new holding company, Gulf Edge Data Center Co, takes 70%; the 30% partner is not named. [2026-10-20] Kaohoon International (9 Jan 2026) says Gulf Edge took 70% of GSA Data Center 03 and AIS DC Venture Co., Ltd. (ADVANC group) took the other 30%. This names the 30% partner left unnamed in the Oct 2026 coverage. The Rayong project, up to 100MW of service capacity, then had customer confirmations of intent to use services, with service agreements under negotiation. COD was then expected in 2027. [2026-10-30] Kasikorn Securities, via Kaohoon International (11 Jun 2026), says Gulf secured a major client for GEDC01 (ex-GSA03), 100MW in the EEC, owned 70 percent by Gulf and 30 percent by ADVANC, with COD targeted for end-2027. The client is not named, so no client op is added. This is the Jun 2026 Kaohoon item the notes could not open. [2026-10-30] Identity flag. TCIJ (11 Sep 2026) lists GEDC 01 (Rayong) among data centres at Silicon Tech Park in Ban Chang district, Rayong. It lists GSA Data Center 05 separately among projects in WHA estates. This conflicts with the held caveat that GEDC01 is the Rayong half of BOI's GSA Data Center 05 approval at WHA ESIE 5 in Pluak Daeng. Location and MW are not changed. Gulf documents still name no estate.",
       "market": "EEC (Eastern Seaboard)",
       "clients_checked": "2026-10-01"
@@ -32118,7 +32130,7 @@
           "publisher": "Thansettakij"
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "Third DAMAC/EDGNEX vehicle in Thailand alongside NextGen (Pathum Thani) and the Proen JV. Exact Chachoengsao site not published. [2026-10-14] BOI approval (BOI press release PR67/2569, 2026-05-06): Skyline Data Center and Cloud Services Co., Ltd. (DAMAC Group), Chachoengsao, 46bn baht, IT load 200MW. Confirms MW is IT load; no estate, contractor or power arrangement named. (Thailand Board of Investment, 2026-05-06) [2026-10-16] Basis set to IT load: the BOI states an IT load of 200MW. [2026-10-19] TNGlobal 11 Nov 2025 reports the only BOI-approved 200MW DAMAC-related project as Zenith Data Center and Cloud Services Co., Ltd. at Navanakorn Industrial Estate, Pathum Thani, with THB 54.9 billion investment. No source found placing a 200MW Skyline or EDGNEX project in Chachoengsao; this row may duplicate Zenith with the wrong province. [2026-10-20] The BOI release of 6 May 2026 names Skyline Data Center and Cloud Services Co., Ltd., part of DAMAC Group, in Chachoengsao with 46bn baht and an IT load of 200MW. Zenith was approved separately in Nov 2025 at Navanakorn, Pathum Thani, with 54.9bn baht. The province, investment and approval date all differ, so the two are separate BOI approvals. This weakens the 2026-10-19 concern that this row duplicates Zenith. The exact Chachoengsao site is still not published. [2026-10-25] Thansettakij (8 Sep 2026) sets out DAMAC's Thai plan with PROEN: 5 to 6 data centres in three years for about 32.5bn baht, starting with a 20MW Rama 9 site in Bangkok, then 3 to 4 sites of about 10MW each, with Sriracha under study. The article does not mention Chachoengsao or the Skyline 200MW BOI approval of May 2026. The Chachoengsao site is still not published. [2026-10-31] The land_permitting entry is dated by the BOI approval of 6 May 2026, the first dated regulatory step for this project. The Chachoengsao site and land seller are still not published.",
       "market": "EEC (Eastern Seaboard)",
       "clients_checked": "2026-10-01"
@@ -32385,7 +32397,7 @@
           "publisher": "ASEAN NOW"
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "Vistas Technology is a subsidiary of China's ZData Technologies (brand of Beijing-based CNISP Group); ZData Cloud Technology (Singapore) is the co-investor. Second ZData project in Thailand after the 203MW Rayong/CPGC site. Capex lint FAIL: US$281m / 80MW = $3.5M/MW, below the $5M/MW floor — BOI-approved figure likely phase-1 or uses a grid-MW denominator. Excluded from clean capex totals. [RESTATED 2026-07-13: 80 -> 130MW] Two BOI-promoted projects under the SAME legal entity (Vistas Technology Co Ltd): #1 THB6.85bn / ~50MW IT (19 May 2025, BOI names only 'Chonburi Province'), #2 THB9.09bn / ~80MW IT explicitly at Amata City Chonburi (21 Nov 2025) - Mingtiandi calls it 'the second data centre project approved by the BOI for Vistas Technology'. We were understating by 50MW. CAVEAT: no source places project #1 at Amata; same-site is presumed, not proven. Distinct from ZData's 203MW at CPGC Rayong (th-ryg-zdata-cpgc) - do not conflate. Checked 2026-10-11, no fresh primary source found. [2026-10-14] MW basis flag: Thailand BOI approval (reported 2025-11-11) is for Vistas Technology Co., Ltd. (ZDATA subsidiary) at Amata City Chonburi Industrial Estate, 9.09bn baht, IT load 80MW. Row carries 130MW; check whether a later approval or expansion exists. (TNGlobal, 2025-11-11) [2026-10-15] The BOI approved Vistas Technology, a subsidiary of ZDATA Technologies and ZDATA Cloud Technology of Singapore, for an 80MW IT load data centre at Amata City Chonburi worth 9,091 million baht. (InfoQuest, 2025-11-10) [2026-10-16] Vistas Technology held an NBTC data centre licence as of 27 July 2026 with 260MW of declared demand, the largest of 26 licence holders. This is a company-level figure and is higher than the 130MW on this row and the 80MW BOI approval of November 2025. The article does not give a location. (ASEAN NOW, 2026-09-08)",
       "market": "EEC (Eastern Seaboard)",
       "clients_checked": "2026-10-02",
@@ -40661,7 +40673,7 @@
           "publisher": "W.Media"
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "LOCATION CONTRADICTION: BusinessWorld/Philstar (Apr 2025) and DCD (Jun 2026) place it in GENERAL TRIAS, Cavite, on a 20-ha Metro Pacific Investments lot (~10 ha to be used); Manila Bulletin (Sep 2025) and a PLDT disclosure summary say TRECE MARTIRES, Cavite. Both are adjacent Cavite cities on the same MPIC landbank — unresolved. STATUS: stage held at 'announced'. PLDT said construction would 'begin in 2026' and completion by 2028, and as of Apr 2025 was still running a vulnerability/risk assessment on the site. No dated source confirms construction has started, so it does NOT qualify for under_construction (rule 8). To be built in five prefab modules; phase 1 starts at 20MW. [audit 2026-07-13 MATERIAL FIX] Metro Pacific Investments removed from funders[] — MPIC is the LANDOWNER of the 20ha General Trias site, not an equity/JV partner. Keeping it fabricated a funder node in the graph. Site name confirmed as General Trias (BusinessWorld/Philstar/w.media/ePLDT CEO); the single \"Trece Martires\" reference is wrong. Note w.media mis-converts PHP40bn as \"US$1B\" — correct is ~US$700m. [audit 2026-08-18] PLDT reaffirmed the P40B, 100MW, five-phase plan in Aug 2026 with construction targeted to start within 2026. [refresh 2026-08-28] SITE IS NOT YET FIXED, which resolves the General Trias versus Trece Martires question in the only way the evidence allows. PLDT chairman Manuel V. Pangilinan told the Inquirer on 2026-08-17 that candidate sites have been presented to the board and none is final, with General Trias one of the locations under consideration. The Trece Martires reference came from a syndicated wire item and does not outrank the chairman on the record. Target capacity restated as 100MW across five 20MW phases, up to about P40bn. Coordinates stay at district precision.",
       "land": [
         {
@@ -45055,7 +45067,7 @@
           "publisher": "Asharq Al-Awsat"
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "Twin of the Riyadh campus and subject to exactly the same caveats. Broke ground August 2025, stated Q2 2026 go-live, energisation unconfirmed across two verification passes, held at under_construction. The 100MW carries no stated basis and no location has been published beyond the city. [refresh 2026-09-11] Rule 8b check 2026-09-11. DCD on 2026-08-26 restated the Q2 2026 go-live target and added that no updates have been provided. Nothing at LEAP 2026 named Dammam. Microsoft's Saudi Arabia East cloud region, due November 2026 in the Eastern Province, is Microsoft's own build and is not connected to this campus by any source. [audit 2026-09-26] No go-live, energisation or slip statement found in any source dated after 26 Aug 2026 (checked 26 Sep, including LEAP coverage). Held at under construction. [sweep 2026-10-12] DCD 2026-03-12 says Humain is building Dammam at an initial 100MW targeting Q2 2026; no go-live confirmation found. [2026-10-13] DCD (2025-08-26) gave Q2 2026 for the first facilities. No dated source confirms go-live by 2026-10-13. Owner flag. target passed. [2026-10-14] The Q2 2026 target for the initial 100MW has passed with no go-live source. AMD, Cisco and Humain said MI355X systems went live in Saudi Arabia on 31 Aug 2026 without naming a site, so it is not credited here. [2026-10-26] Not attached. Al Moammar Information Systems (MIS) disclosed Humain design and build contracts on Tadawul in Dec 2025 and Aug 2026, growing from 50MW to 250MW. None of the filings or reports names Dammam or any other site. A separate MIS MoU with Saudi Fransi Capital for Saudi Data Centre Fund 1 (Jul 2026) studies sites in Riyadh, Dammam and Jeddah of about 48MW combined. It does not involve Humain."
     },
     {
@@ -48087,7 +48099,7 @@
       "land": [],
       "power_supply": [],
       "water_cooling": [],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "First AirTrunk project in the Gulf, from the US$3bn partnership announced in Riyadh on 2025-10-28. The partnership release named no MW and no city. MEED (2026-04-27) put the campus in Riyadh at 250MW and reported six bidder groups with commercial bids due 2026-05-04. The 250MW carries no stated basis. No award, site or groundbreaking has been reported, so the stage stays announced. A tender with bids in is not a construction start. MEED also reports a US$1.2bn Humain financing agreement with the National Infrastructure Fund, signed at Davos in January 2026. No source ties it to this campus, so it is not recorded as a funder. POSSIBLE OVERLAP. Al Moammar disclosed a Humain design-and-build scope of 250MW in Riyadh with no site named. That contract went to a different firm from all six bidders here, so the two are kept apart until a source links them. [sweep 2026-10-12] Checked 2026-10-12, no fresh primary source found. Disambiguation: the SR750m (US$200m) Riyadh contract MEED reported on 6 Oct 2026, won by Hassan Allam and Sterling & Wilson, is for a Humain and center3 facility (16.2MW phase 1, 50MW total). It is not this AirTrunk campus, which has no award reported yet. (MEED, 2026-10-06) [2026-10-21] Disambiguation. MEED (16 Oct 2026) reports a separate Humain EPC tender for a 100MW data centre on a 350,200 sqm plot in Riyadh's Al-Saad area, with bids due 8 Nov 2026 and four 33kV SEC connections. The article does not mention AirTrunk. It is not this campus and none of its facts are recorded here.",
       "clients_checked": "2026-10-01"
     },
@@ -62761,6 +62773,12 @@
           "title": "Andhra Pradesh mandates 70pc renewable energy for data centres: Lokesh",
           "date": "2026-09-25",
           "publisher": "Telangana Today (PTI)"
+        },
+        {
+          "url": "https://www.energetica-india.net/news/renew-announces-inr-80000-crore-investments-in-andhra-pradesh",
+          "title": "ReNew Announces INR 80,000 Crore Investments in Andhra Pradesh",
+          "date": "2026-11-12",
+          "publisher": "Energetica India"
         }
       ],
       "land": [
@@ -62785,8 +62803,8 @@
           }
         }
       ],
-      "last_verified": "2026-11-10",
-      "notes": "AP cleared the Renew AP Green Data Center in Aug 2026. Site is 433.30 acres at Makavaripalem in Anakapalli district. Capacity is 1,000 MW and investment INR 85,200 crore with 1,880 jobs. The Hans India names ReNew Energy Global Plc and calls it a collaborative model. MW basis is not stated. ReNew AP on 433 acres at Makavaripalem per the Aug 2026 approval; the 1,000MW is the approved project size with no phase or committed MW. Checked 2026-10-13, no fresh primary source found. [2026-10-13] AP approval reported 24 Aug 2026 with a build period of nine years five months on 433.30 acres at Makavaripalem, Rs 85,200 crore. [2026-10-15] Andhra Pradesh cleared incentives in early September 2026 for Renew AP Green Data Center Pvt Ltd in Anakapalli as one of two projects totalling Rs 1.44 lakh crore and 1,486 MW. (Blitz India Media, 2026-09-04) [2026-10-19] ReNew is in talks with unnamed global data centre players to collaborate on the Anakapalli project. The state industrial agency is to hand over the land after approval. [2026-10-19] Andhra Pradesh requires at least 70 percent of data centre energy to come from renewable sources. This is state policy and not a project disclosure. [2026-11-08] Checked 2026-11-08, first nothing_new.",
+      "last_verified": "2026-11-18",
+      "notes": "AP cleared the Renew AP Green Data Center in Aug 2026. Site is 433.30 acres at Makavaripalem in Anakapalli district. Capacity is 1,000 MW and investment INR 85,200 crore with 1,880 jobs. The Hans India names ReNew Energy Global Plc and calls it a collaborative model. MW basis is not stated. ReNew AP on 433 acres at Makavaripalem per the Aug 2026 approval; the 1,000MW is the approved project size with no phase or committed MW. Checked 2026-10-13, no fresh primary source found. [2026-10-13] AP approval reported 24 Aug 2026 with a build period of nine years five months on 433.30 acres at Makavaripalem, Rs 85,200 crore. [2026-10-15] Andhra Pradesh cleared incentives in early September 2026 for Renew AP Green Data Center Pvt Ltd in Anakapalli as one of two projects totalling Rs 1.44 lakh crore and 1,486 MW. (Blitz India Media, 2026-09-04) [2026-10-19] ReNew is in talks with unnamed global data centre players to collaborate on the Anakapalli project. The state industrial agency is to hand over the land after approval. [2026-10-19] Andhra Pradesh requires at least 70 percent of data centre energy to come from renewable sources. This is state policy and not a project disclosure. [2026-11-08] Checked 2026-11-08, first nothing_new. [2026-11-18] At the CII Partnership Summit in Visakhapatnam on 12 Nov 2026, ReNew announced an INR 67,000 crore, 1GW Green Hyperscale Data Centre in Anakapalli as part of about INR 80,000 crore of new investment. This is below the Rs 85,200 crore in the August 2026 approval. No phase, MW basis or timeline is given. Planned MW is unchanged.",
       "clients_checked": "2026-10-02",
       "approvals": [
         {
@@ -65139,7 +65157,7 @@
           "publisher": "Adani Enterprises Ltd (NSE filing)"
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "AEL FY25 annual report records Hyderabad live at 9.6MW. AEL Q4 FY26 release says a 4.8MW Phase II at Hyderabad was handed over and a new 358MW hyperscale order was received in Hyderabad, taking tied up capacity to 560+ MW. It is unclear whether 9.6 already includes the 4.8MW phase so live may be 14.4MW. Q1 FY27 release gives ACX operational 65.4MW and tied up 960+ MW after a 400MW Vizag order. The operator page gives the site as Pargi Road, Elikatta, so this row and the held Elikatta row are the same campus. No construction start date for the 358MW build. Q1 FY27 deck table shows Hyderabad 19.2MW operational after Phase I completion and 406MW growth pipeline. Planned 358 is the signed hyperscale order disclosed in the Q4 FY26 results; the 406 pipeline figure is not recorded. Checked 2026-10-13, no fresh primary source found. [2026-10-19] AdaniConneX's data centres page says the Hyderabad campus uses renewable energy up to 100%. No utility, PPA or substation is named. [2026-10-19] MW conflict: AdaniConneX's undated data centres page gives Hyderabad a potential capacity of 600MW IT load and 'Phase 1 Live: Oct 2024'. The row carries 358MW from the signed hyperscale order. Not changed. [2026-10-24] Land, possible second Hyderabad site. Adani Power sold 100% of Chandenvalle Infra Park Limited (CIPL) to AdaniConneX for Rs 535.69 crore, completed on 27 Aug 2026. CIPL holds sizeable land parcels with land approvals in and around the Chandanvelly industrial park in Telangana and had not begun operations. No plans were disclosed. Chandanvelly is a different location from the Elikatta campus on this row. Owner to decide whether this is a new row. [2026-10-24] Grid works, inferred link. TGTRANSCO orders of 31 Jan 2026 approve a new 400/220kV Chandanvally GIS substation with 3 x 500MVA transformers to serve load growth at TGIIC Chandanvally. The scheme includes a 220kV double-circuit underground cable of about 2km to Chandanvally Infra Park Ltd. This is very likely the CIPL land AdaniConneX bought in Aug 2026, but the spellings differ and the orders do not mention data centres. Total approved cost across the three orders is about Rs 828 crore including interest during construction. [2026-10-25] Grid works near the site, not linked. TGTRANSCO order T.O.O.(CE-400kV) Ms.No.2644 of 31 Jan 2026 gives administrative approval for a new 400/220kV Shadnagar GIS substation in Ranga Reddy district at Rs 296.65 crore including interest during construction. The 220kV switching station at Elikatta serves as its LV bus. CEA approved 3 x 500MVA ICTs and a 125 MVAR reactor, which are excluded from this order. The order cites load growth in industrial areas near Elikatta and Mekaguda villages and does not mention data centres or AdaniConneX. [2026-10-26] Possible second Hyderabad site, not linked to Elikatta. Adani Enterprises disclosed in June 2026 that AdaniConneX bought 100% of Madhuvanti Build Estate Ltd for Rs 765.25 crore in cash. The company holds a sizeable land parcel and licences. The filing coverage does not give the land location or area. [2026-10-26] TGTRANSCO order Ms.No.2637 (31 Jan 2026) for the new 400/220kV Chandanvally GIS includes a 220kV double-circuit underground cable of about 4km to Madhuvanti Build Estate Pvt Ltd and cites a feasibility report for a 250MVA supply at 220kV to that company. Madhuvanti is now owned by AdaniConneX, so AdaniConneX appears to hold a site at Chandanvally needing 250MVA. Chandanvally is a different location from Elikatta, so this is not entered as this row's power supply. [2026-10-30] Build method. AdaniConneX's site says its Hyderabad data center won the Platinum Award for Best Construction Project (precast category) at the ISDA Infracon National Awards 2025 and the Best Pre-Engineered Building (Steel and Precast) award at the 16th CIDC Vishwakarma Awards 2025. So the building uses a precast and pre-engineered steel structure. No contractor is named. [2026-11-02] MW conflict. The Q2 FY27 deck (28 Oct 2026) gives Hyderabad 406MW in total with 19.2MW operational (Hyd I phases I and II at 9.6MW each). The row holds 358MW planned. The 406MW may include the Chandanvally site bought through Madhuvanti, so planned MW is unchanged. MW basis is not stated. [2026-11-03] Corporate vehicle, site not linked. Adani Enterprises told the NSE that AdaniConneX incorporated a wholly owned subsidiary, AdaniConneX Hyderabad Three Limited, on 3 Dec 2025 to build, develop and operate a data centre. Adani Enterprises holds 50% indirectly through AdaniConneX. The filing gives no site, land or MW. It may be the vehicle for the Chandanvally land or for a later Elikatta phase. Owner to check."
     },
     {
@@ -71003,7 +71021,7 @@
       "aliases": [
         "中联零碳智算（云基地）产业园"
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "notes": "Building 1 (75MW IT) is being built and due in H2 2026 (人民日报, 28 Jul 2026). 600MW IT is the stage 1 plan (经济日报, 8 Feb 2026). A 330kV supply project serves the site. A reported investment of about 50bn yuan rests on one headline and is not recorded. The December 2024 investment contract covered a two-centre project of 500MW IT in three phases. The second centre is in Xuanhe. The later 600MW first-stage figure for the Cloud Base site is used for this row. People's Daily (28 Jul 2026) repeats that hall 1 is structurally complete and due in the second half of 2026 with 30,000 standard racks. A revised Zone A layout went to public notice on 17 Sep 2026 under 宁夏卫联算都, changing halls 5 to 8 and dropping one generator building. [2026-10-20] Zhonglian Data's northwest regional general manager told People's Daily the park is planned to cover over 1,000 mu. This is larger than the two held land parcels. [2026-10-23] The 330kV substation EIA says the Cloud Base park covers 500 mu and plans buildings 1 to 8 with 39,424 cabinets of 16kW and 128 of 4kW. Final maximum load is about 800MW. That is total load, not IT load, so planned MW is unchanged. Near-term operation is planned for June 2027 and final operation for June 2028. This is later than the second half of 2026 given for hall 1 by People's Daily. The developer 宁夏卫联算都 is a wholly owned subsidiary of 中联云港科技股份有限公司. Its land title (宁（2025）中卫市不动产权第T0009416号) was issued on 10 Nov 2025. [2026-10-29] Approval: on 28 Oct 2026 the Zhongwei natural resources bureau cancelled the works planning permit (建设工程规划许可证, 建字第6405022025GG0041511号) for 中联零碳智算（云基地）产业园A区项目. The permit and its drawings are void from the date of the notice. The bureau says the builder, 宁夏西部智算大数据科技有限公司, applied for the cancellation because the Zone A planning and design scheme was locally revised. This follows the revised Zone A layout put to public notice on 17 Sep 2026. No replacement works permit was found yet. The applicant named here is not 宁夏卫联算都, the developer named in the substation EIA, so the developer entity needs review. [2026-10-30] Economic Daily (23 Apr 2025) and Ningxia Daily via CNR (10 Apr 2025) say the Zone A project started (开工) on 27 Mar 2025 with a groundbreaking ceremony at the Zhongwei western cloud base. Zone A was then described as about 260,000 sqm with 1 office building and 4 data centre buildings of 5,000 AI racks each. The held construction date is 28 Jul 2026, and the Zone A works permit was cancelled on 28 Oct 2026 for a revised design, so the 2025 date may mark a ceremony rather than sustained works. Owner check. Zhonglian's first stage across Zhongwei was then planned at 480,000 standard racks and about 1.2GW of IT. No new permit for Zone A appeared on the Zhongwei natural resources bureau permit list up to 23 Oct 2026. [2026-11-09] Approval: a replacement works planning permit (建设工程规划许可证, e-supervision no. 6405022026GG0083637) for Zone A of the Cloud Base park was issued on 27 Oct 2026 and posted on 4 Nov 2026. The holder is 宁夏卫联算都大数据科技有限公司. It covers data centre buildings 1, 5, 6 and 8, a gatehouse and an underground water tank, with 178,207.14 sqm of floor area (173,583.14 sqm counted for plot ratio). The site is in Zhongwei Industrial Park, bounded by Weiyun Road to the east and Fengyun Road to the north, with other Zhonglian park land to the west. This follows the cancellation on 28 Oct 2026 of the earlier Zone A permit held by 宁夏西部智算大数据科技有限公司, so the Zone A builder is again 宁夏卫联算都. No IT MW is stated. No Zhonglian EIA decision appeared on the Zhongwei ecology bureau lists to 5 Nov 2026.",
       "investment": null,
       "power_supply": [
@@ -71945,13 +71963,19 @@
           "title": "晶科电力科技股份有限公司关于收到上海证券交易所监管工作函的回复公告",
           "date": "2026-04-22",
           "publisher": "晶科电力科技股份有限公司 (Shanghai Stock Exchange filing)"
+        },
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-11-14/1225672037.PDF",
+          "title": "关于收到上海证券交易所监管函件的回复公告",
+          "date": "2026-11-14",
+          "publisher": "晶科科技 (601778.SH) via cninfo"
         }
       ],
       "aliases": [
         "晶科科技宁夏中卫1GW算力中心项目"
       ],
-      "last_verified": "2026-11-11",
-      "notes": "The exchange announcement calls the agreement a framework intention whose scale, investment and phasing are preliminary and not a company commitment. Its phase table gives IT power of 400, 300 and 300MW. National approval, a land sale and a strategic partner are still needed, and the exchange sent a regulatory letter. Site is the Xuanhe area of the Zhongwei cluster, about 800 mu. [2026-10-15] Planned MW 1000 is the IT load the company gave in its reply to the Shanghai Stock Exchange inquiry (400MW phase 1, 300MW phase 2, 300MW phase 3). The company calls the agreement a preliminary framework, so the figure is a plan with no committed funding (东方财富网, 2026-04-21). [2026-10-15] In its reply to the Shanghai Stock Exchange inquiry Jinko said phase 1 (about 320 mu) runs 2026 to 2027, phase 2 by end-2027 and phase 3 by end-2028, all contingent on approvals, tenant signings and financing, with a joint venture partner not yet named. (东方财富网, 2026-04-21) [2026-10-19] At an investor research session in Aug 2026 Jinko said the Zhongwei computing centre was still being actively advanced and that it would disclose major progress as required. No construction start, land sale or joint venture partner had been disclosed by then. [2026-10-19] Jinko said the centre could draw on nearby solar output but would need grid power to cover gaps in solar generation. Press notes that national hub rules require at least 80 percent green power for new data centres, so large outside green power purchases would be needed. No supply contract is disclosed. [2026-10-21] The Shapotou environment bureau approved in Jan 2026 the EIA of a water works for the Xuanhe area of the Zhongwei data centre cluster, where this project sits. Ningxia Water Group (宁夏水务集团) is building a 30,000 m3 per day water plant with 4.2 km of raw water main to supply production and domestic water to all users in the area. Jinko is not named, so the plant is shared area infrastructure, not a Jinko supply contract. [2026-10-30] Jinko Power's Q3 2026 report (29 Oct 2026) says the Ningxia Zhongwei computing centre investment framework agreement signed in April 2026 has had its application materials prepared and submitted, and the matter is in the approval process. The company warns the project may be approved later than expected or not approved. It also says it has bought Hangzhou Wangyin Interconnect (杭州网银互联, an IDC operator) and set up an AI Infra division. No construction start is reported. [2026-11-03] Area infrastructure, not a Jinko contract. A Feb 2026 procurement notice by Ningxia Water Group for the Xuanhe area water works (项目代码 2508-640502-04-01-148801) gives the plant a design capacity of 80,000 m3 per day, with 30,000 m3 per day near term and 50,000 m3 per day added later, plus 4.2 km of raw water main and 3.8 km of distribution main. This adds the ultimate design size to the 30,000 m3 per day plant already in notes. [2026-11-03] Area infrastructure, not a Jinko contract. A Mar 2026 Ningxia Water Group procurement notice for the Xuanhe area sewage treatment and reuse works (项目代码 2508-640502-04-01-980278) describes a 20,000 m3 per day reclaimed water plant (6,000 m3 per day near term), four lift pump stations and 12.5 km of sewage and reclaimed water pipes, with works investment of about 192 million yuan. Jinko is not named. [2026-11-05] Approval: Jinko's Q3 2026 report says the application materials for the Ningxia Zhongwei computing centre have been prepared and submitted and the project is in the approval process. The company warns approval may be slower than expected or may not be granted. No construction start is reported. [2026-11-10] Design and approvals. In its reply to the Shanghai Stock Exchange work letter, Jinko says the project is planned around 20kW high-density racks. It says the project, as a very large computing centre, will start construction only after national window guidance (窗口指导) review and all other prior approvals are complete, under April 2025 rules from the NDRC, MIIT and the National Data Administration. Racks are not converted to MW.",
+      "last_verified": "2026-11-18",
+      "notes": "The exchange announcement calls the agreement a framework intention whose scale, investment and phasing are preliminary and not a company commitment. Its phase table gives IT power of 400, 300 and 300MW. National approval, a land sale and a strategic partner are still needed, and the exchange sent a regulatory letter. Site is the Xuanhe area of the Zhongwei cluster, about 800 mu. [2026-10-15] Planned MW 1000 is the IT load the company gave in its reply to the Shanghai Stock Exchange inquiry (400MW phase 1, 300MW phase 2, 300MW phase 3). The company calls the agreement a preliminary framework, so the figure is a plan with no committed funding (东方财富网, 2026-04-21). [2026-10-15] In its reply to the Shanghai Stock Exchange inquiry Jinko said phase 1 (about 320 mu) runs 2026 to 2027, phase 2 by end-2027 and phase 3 by end-2028, all contingent on approvals, tenant signings and financing, with a joint venture partner not yet named. (东方财富网, 2026-04-21) [2026-10-19] At an investor research session in Aug 2026 Jinko said the Zhongwei computing centre was still being actively advanced and that it would disclose major progress as required. No construction start, land sale or joint venture partner had been disclosed by then. [2026-10-19] Jinko said the centre could draw on nearby solar output but would need grid power to cover gaps in solar generation. Press notes that national hub rules require at least 80 percent green power for new data centres, so large outside green power purchases would be needed. No supply contract is disclosed. [2026-10-21] The Shapotou environment bureau approved in Jan 2026 the EIA of a water works for the Xuanhe area of the Zhongwei data centre cluster, where this project sits. Ningxia Water Group (宁夏水务集团) is building a 30,000 m3 per day water plant with 4.2 km of raw water main to supply production and domestic water to all users in the area. Jinko is not named, so the plant is shared area infrastructure, not a Jinko supply contract. [2026-10-30] Jinko Power's Q3 2026 report (29 Oct 2026) says the Ningxia Zhongwei computing centre investment framework agreement signed in April 2026 has had its application materials prepared and submitted, and the matter is in the approval process. The company warns the project may be approved later than expected or not approved. It also says it has bought Hangzhou Wangyin Interconnect (杭州网银互联, an IDC operator) and set up an AI Infra division. No construction start is reported. [2026-11-03] Area infrastructure, not a Jinko contract. A Feb 2026 procurement notice by Ningxia Water Group for the Xuanhe area water works (项目代码 2508-640502-04-01-148801) gives the plant a design capacity of 80,000 m3 per day, with 30,000 m3 per day near term and 50,000 m3 per day added later, plus 4.2 km of raw water main and 3.8 km of distribution main. This adds the ultimate design size to the 30,000 m3 per day plant already in notes. [2026-11-03] Area infrastructure, not a Jinko contract. A Mar 2026 Ningxia Water Group procurement notice for the Xuanhe area sewage treatment and reuse works (项目代码 2508-640502-04-01-980278) describes a 20,000 m3 per day reclaimed water plant (6,000 m3 per day near term), four lift pump stations and 12.5 km of sewage and reclaimed water pipes, with works investment of about 192 million yuan. Jinko is not named. [2026-11-05] Approval: Jinko's Q3 2026 report says the application materials for the Ningxia Zhongwei computing centre have been prepared and submitted and the project is in the approval process. The company warns approval may be slower than expected or may not be granted. No construction start is reported. [2026-11-10] Design and approvals. In its reply to the Shanghai Stock Exchange work letter, Jinko says the project is planned around 20kW high-density racks. It says the project, as a very large computing centre, will start construction only after national window guidance (窗口指导) review and all other prior approvals are complete, under April 2025 rules from the NDRC, MIIT and the National Data Administration. Racks are not converted to MW. [2026-11-18] Approvals. In a reply to a Shanghai Stock Exchange regulatory letter dated 14 Nov 2026, Jinko says it has not yet received the formal window guidance (窗口指导) opinion for the Zhongwei 1GW project. The feasibility study is done and the application was sent to local authorities, which gave several rounds of feedback. Jinko had planned to complete the energy review, project filing, EIA, land sale, planning permit and drawings within six months of that opinion, so that clock has not started. Financing and partners are not yet locked. Jinko says it signed non-binding cooperation and intent documents with several leading firms from Beijing and Shenzhen in large models, internet services and embodied AI, covering the project's core capacity. None is named and none is a firm order, so no client is added. The exchange letter cites planned total investment of about 24.5 billion yuan.",
       "land": [
         {
           "counterparty": "中卫市人民政府 (investment agreement, 宣和片区)",
@@ -103536,7 +103560,7 @@
           }
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-18",
       "name": "China Telecom Smart Cloud Base, Zhangbei Park (中国电信智慧云基地张北园区)",
       "region": "Hebei",
       "city": "Zhangbei County, Zhangjiakou",
@@ -103676,13 +103700,25 @@
           "title": "中国电信集团有限公司智慧云基地张北园区建设运营中心2026年通信电源配套二期（南楼）全过程跟踪、结算及决算审计项目询比公告",
           "date": "2026-11-05",
           "publisher": "中国电信阳光采购网"
+        },
+        {
+          "url": "https://caigou.chinatelecom.com.cn/DeclareDetails?id=4887055073039024128&type=1&docTypeCode=CompareSelect",
+          "title": "中国电信集团有限公司智慧云基地张北园区建设运营中心2027-2028年数据中心通信电源配套工程可行性研究咨询服务采购项目询比公告",
+          "date": "2026-11-17",
+          "publisher": "中国电信阳光采购网"
+        },
+        {
+          "url": "https://caigou.chinatelecom.com.cn/DeclareDetails?id=4887026997018222592&type=1&docTypeCode=CompareSelect",
+          "title": "中国电信集团有限公司智慧云基地张北园区建设运营中心2026年通信电源配套二期（南楼）全过程跟踪、结算及决算审计项目（重新询比）询比公告",
+          "date": "2026-11-17",
+          "publisher": "中国电信阳光采购网"
         }
       ],
       "aliases": [
         "中国电信张北园区",
         "China Telecom Zhangbei"
       ],
-      "notes": "The tender states at least 15,000 racks to meet 150MW of IT capacity, with total power demand of 200MVA. The site is in the Zhangbei County Economic Development Zone big data park. Phase 1.1 civil works were tendered in April 2025 and the phase 1.2 civil EPC in March 2026. No dated source confirms a groundbreaking, so the stage is held at land_permitting. Separate from China Telecom Huailai. [2026-10-17] The Zhangbei park construction and operation centre tendered full process consulting for its 2026 communications power phase 2 works on 12 Aug 2026. No award has been published. (政府采购信息网 (caigou2003), 2026-08-12) [2026-10-20] China Telecom tendered foundation pit monitoring for civil works phase 1.3 (土建1.3期) of the Zhangbei park construction and operation centre on 18 Sep 2026. Candidates were posted on 29 Sep 2026 and the result on 13 Oct 2026. Pit monitoring points to excavation for phase 1.3, but no dated groundbreaking is stated, so the stage is not changed. [2026-10-20] A March 2026 project listing for the park's 2025 communications power phase 1 works places the site in the 庙滩大数据产业园. The scope covers UPS, fit out and fire systems for building A1, plus outdoor containerised diesel generators and buried fuel tanks. The capacity and investment figures are masked in the listing. [2026-10-21] Approval: the project was filed with the Zhangbei County administrative approval bureau under 张北行审备字(2025)17号. Civil phase 1.1 investment is 95.96 million yuan excluding tax. The site is in the big data industrial park of the Zhangbei economic development zone, south of Weier Road and west of Yongchun Street. The tender planned site works to start before 20 May 2025 and MEP installation conditions by 30 Apr 2026. These are planned dates. [2026-10-23] The 2026 phase 2 consulting tender says the phase 2 works give a customer at least 20.5MW of IT in the south half of building A2. Phase 1 covers 20.5MW of IT in A2. These are tender figures. Planned MW is unchanged. The park lies west of Yongchun North Street, beside the 云联数据 and Alibaba Zhangbei parks. [2026-10-24] Candidate notice (15 May 2026, China Telecom procurement) for the 2026 phase 1 communications power EPC at the Zhangbei park: first candidate 中通服咨询设计研究院有限公司 with 华为技术服务有限公司. Scope is the A2 data centre M&E works adding 20.5 MW of IT (power distribution, UPS, cooling, generators). Investment estimate 355.18 million yuan and procurement estimate 265.83 million yuan, both ex-tax. Works due by 30 Dec 2026. Candidate notice only. [2026-11-05] The civil phase 1.2 and 1.3 tenders give total project investment of 1.45 billion yuan ex-tax. The construction cost estimate is 239.27 million yuan for phase 1.2 and 546.71 million yuan for phase 1.3, both ex-tax. [2026-11-05] STAGE CHECK: the row is held at land_permitting, but civil EPC awards for phase 1.2 (7 Apr 2026, A2 data centre, planned start 15 Apr 2026) and phase 1.3 (15 Jul 2026, A3 and A4 data centres) are in place. The held notes also show a 2025 communications power package for building A1 and a 2026 package adding 20.5MW of IT in A2. Together these point to construction under way. None of these notices gives a dated start of works, so no stage change is proposed. [2026-11-05] On 5 Nov 2026 the Zhangbei park construction and operation centre opened a procurement for full process tracking, settlement and final account audit of its 2026 communications power phase 2 works for the south building (南楼). A tracking audit runs alongside works, so this points to the phase 2 power package moving to construction. It gives no start date, so the stage is not changed. [2026-11-06] The audit procurement for the 2026 communications power phase 2 works (5 Nov 2026, lot HECGXM202611020008001001) gives phase 2 a total investment of 384.89 million yuan excluding tax. Phase 2 builds 8 IT rooms in the south half of the A2 data centre, with 1,712 racks of 12kW planned. It also covers an outdoor generator steel platform, generator air ducts, chilled water treatment, outdoor air conditioning steel structures, corridor services and the operations building ECC fit-out. The audit is estimated at 0.85 million yuan ex-tax and runs to 31 Dec 2028. Racks are not converted to MW."
+      "notes": "The tender states at least 15,000 racks to meet 150MW of IT capacity, with total power demand of 200MVA. The site is in the Zhangbei County Economic Development Zone big data park. Phase 1.1 civil works were tendered in April 2025 and the phase 1.2 civil EPC in March 2026. No dated source confirms a groundbreaking, so the stage is held at land_permitting. Separate from China Telecom Huailai. [2026-10-17] The Zhangbei park construction and operation centre tendered full process consulting for its 2026 communications power phase 2 works on 12 Aug 2026. No award has been published. (政府采购信息网 (caigou2003), 2026-08-12) [2026-10-20] China Telecom tendered foundation pit monitoring for civil works phase 1.3 (土建1.3期) of the Zhangbei park construction and operation centre on 18 Sep 2026. Candidates were posted on 29 Sep 2026 and the result on 13 Oct 2026. Pit monitoring points to excavation for phase 1.3, but no dated groundbreaking is stated, so the stage is not changed. [2026-10-20] A March 2026 project listing for the park's 2025 communications power phase 1 works places the site in the 庙滩大数据产业园. The scope covers UPS, fit out and fire systems for building A1, plus outdoor containerised diesel generators and buried fuel tanks. The capacity and investment figures are masked in the listing. [2026-10-21] Approval: the project was filed with the Zhangbei County administrative approval bureau under 张北行审备字(2025)17号. Civil phase 1.1 investment is 95.96 million yuan excluding tax. The site is in the big data industrial park of the Zhangbei economic development zone, south of Weier Road and west of Yongchun Street. The tender planned site works to start before 20 May 2025 and MEP installation conditions by 30 Apr 2026. These are planned dates. [2026-10-23] The 2026 phase 2 consulting tender says the phase 2 works give a customer at least 20.5MW of IT in the south half of building A2. Phase 1 covers 20.5MW of IT in A2. These are tender figures. Planned MW is unchanged. The park lies west of Yongchun North Street, beside the 云联数据 and Alibaba Zhangbei parks. [2026-10-24] Candidate notice (15 May 2026, China Telecom procurement) for the 2026 phase 1 communications power EPC at the Zhangbei park: first candidate 中通服咨询设计研究院有限公司 with 华为技术服务有限公司. Scope is the A2 data centre M&E works adding 20.5 MW of IT (power distribution, UPS, cooling, generators). Investment estimate 355.18 million yuan and procurement estimate 265.83 million yuan, both ex-tax. Works due by 30 Dec 2026. Candidate notice only. [2026-11-05] The civil phase 1.2 and 1.3 tenders give total project investment of 1.45 billion yuan ex-tax. The construction cost estimate is 239.27 million yuan for phase 1.2 and 546.71 million yuan for phase 1.3, both ex-tax. [2026-11-05] STAGE CHECK: the row is held at land_permitting, but civil EPC awards for phase 1.2 (7 Apr 2026, A2 data centre, planned start 15 Apr 2026) and phase 1.3 (15 Jul 2026, A3 and A4 data centres) are in place. The held notes also show a 2025 communications power package for building A1 and a 2026 package adding 20.5MW of IT in A2. Together these point to construction under way. None of these notices gives a dated start of works, so no stage change is proposed. [2026-11-05] On 5 Nov 2026 the Zhangbei park construction and operation centre opened a procurement for full process tracking, settlement and final account audit of its 2026 communications power phase 2 works for the south building (南楼). A tracking audit runs alongside works, so this points to the phase 2 power package moving to construction. It gives no start date, so the stage is not changed. [2026-11-06] The audit procurement for the 2026 communications power phase 2 works (5 Nov 2026, lot HECGXM202611020008001001) gives phase 2 a total investment of 384.89 million yuan excluding tax. Phase 2 builds 8 IT rooms in the south half of the A2 data centre, with 1,712 racks of 12kW planned. It also covers an outdoor generator steel platform, generator air ducts, chilled water treatment, outdoor air conditioning steel structures, corridor services and the operations building ECC fit-out. The audit is estimated at 0.85 million yuan ex-tax and runs to 31 Dec 2028. Racks are not converted to MW. [2026-11-18] Next phase planning. On 17 Nov 2026 the Zhangbei park construction and operation centre opened a procurement (HEBXWJ20261117003) for a feasibility study for its 2027 to 2028 data centre communications power works. This points to further M&E phases after the 2026 phase 1 and phase 2 power packages. No scope, MW or investment is given in the listing. [2026-11-18] The tracking, settlement and final account audit procurement for the 2026 communications power phase 2 works (south building) failed on 13 Nov 2026 and was re-tendered on 17 Nov 2026 (HEBXWJ20261117004). The phase 2 works themselves are not affected by the notice. No start date is given, so the stage is not changed."
     },
     {
       "id": "cn-hhht-bocom-horinger",
@@ -105300,7 +105336,7 @@
         }
       ],
       "contractors": [],
-      "last_verified": "2026-11-11"
+      "last_verified": "2026-11-18"
     },
     {
       "id": "in-mum-ctrls-mahape",
@@ -106122,6 +106158,206 @@
       ],
       "last_verified": "2026-11-12",
       "notes": "Adani Enterprises' Q2 FY27 investor presentation (BSE filing, 28 Oct 2026) lists Navi Mumbai at 460MW total, split into 'Ghansoli - 220 MW | Execution started' and 'Taloja - 240 MW | New Order Received'. Taloja is its own row. The deck does not say whether the MW is IT load. The stage date is the filing date that first names Ghansoli. The Q1 FY27 presentation (29 Jul 2026) showed Navi Mumbai at 110MW with execution started for two buildings of 30MW and 80MW, site not named. This is read as the same project, now shown at 220MW. No trade press, plot, MIDC allotment or environmental clearance found yet. The AdaniConneX website gives Navi Mumbai a potential of 1,000MW, a ceiling not recorded. Not to be confused with the Blackstone and Panchshil Ghansoli site, held as a lead. Pin is the Ghansoli MIDC area at district precision."
+    },
+    {
+      "id": "in-vtz-airtrunk-tootipala",
+      "name": "AirTrunk Tootipala campus",
+      "campus": "AirTrunk Tootipala campus",
+      "country": "IN",
+      "region": "Andhra Pradesh",
+      "city": "Tootipala (Makavarapalem mandal), Anakapalli district",
+      "market": "Visakhapatnam",
+      "lat": 17.66,
+      "lng": 82.72,
+      "coords_precision": "district",
+      "stage": "announced",
+      "stage_history": [
+        {
+          "stage": "announced",
+          "date": "2026-11-16",
+          "source": "https://airtrunk.com/airtrunk-signs-mou-for-proposed-data-centre-campuses-in-andhra-pradesh/"
+        }
+      ],
+      "phases": [],
+      "power": {
+        "planned_mw": 1400,
+        "live_mw": null,
+        "mw_basis": "unstated"
+      },
+      "power_cost": {
+        "usd_per_kwh": null,
+        "source": "country_tariff"
+      },
+      "investment": null,
+      "operator": {
+        "name": "AirTrunk",
+        "type": "colo",
+        "group": "AirTrunk"
+      },
+      "funders": [
+        {
+          "name": "Blackstone",
+          "type": "pe",
+          "role": "equity"
+        },
+        {
+          "name": "CPP Investments",
+          "type": "pension",
+          "role": "equity"
+        }
+      ],
+      "clients": [],
+      "ai_status": "unknown",
+      "ai_evidence": "",
+      "sources": [
+        {
+          "url": "https://airtrunk.com/airtrunk-signs-mou-for-proposed-data-centre-campuses-in-andhra-pradesh/",
+          "title": "AirTrunk signs MoU for proposed data centre campuses in Andhra Pradesh",
+          "date": "2026-11-16",
+          "publisher": "AirTrunk"
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/21131-airtrunk-signs-mou-for-two-data-centre-projects-in-andhra-pradesh.html",
+          "title": "AirTrunk signs MoU for two data centre projects in Andhra Pradesh",
+          "date": "2026-11-16",
+          "publisher": "Developing Telecoms"
+        },
+        {
+          "url": "https://www.businesstoday.in/latest/corporate/story/blackstone-backed-airtrunk-plans-rs1-03-lakh-crore-investment-in-andhra-pradesh-for-two-data-centre-campuses-567467-2026-11-14",
+          "title": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses",
+          "date": "2026-11-14",
+          "publisher": "Business Today"
+        },
+        {
+          "url": "https://w.media/airtrunk-planning-1-8-gw-of-data-center-capacity-in-andhra-pradesh/",
+          "title": "AirTrunk planning 1.8 GW of data center capacity in Andhra Pradesh",
+          "date": "2026-11-16",
+          "publisher": "W.Media"
+        }
+      ],
+      "water_cooling": [
+        {
+          "source_type": "industrial_raw",
+          "supplier": "Polavaram-Yeleru industrial water allocation (proposed in the DPR)",
+          "volume": null,
+          "cooling": "air",
+          "cooling_note": "AirTrunk says it prioritises low-water air-cooled technologies for the proposed campuses.",
+          "pue_design": null,
+          "wue": null,
+          "date": "2026-11-16",
+          "note": "Proposal stage. Not yet approved.",
+          "evidence": "confirmed",
+          "basis": null,
+          "source": {
+            "url": "https://airtrunk.com/airtrunk-signs-mou-for-proposed-data-centre-campuses-in-andhra-pradesh/",
+            "title": "AirTrunk signs MoU for proposed data centre campuses in Andhra Pradesh",
+            "date": "2026-11-16",
+            "publisher": "AirTrunk"
+          }
+        }
+      ],
+      "last_verified": "2026-11-18",
+      "notes": "AirTrunk signed an MoU with the Andhra Pradesh government for two proposed campuses in Anakapalli district, 400MW at Rambilli and 1,400MW at Tootipala. AirTrunk has submitted a detailed project report and the proposal still needs state approvals. Bloomberg, via Business Today, puts the combined investment at about Rs 1.03 lakh crore (US$11 billion). AirTrunk's release gives no figure and no split by campus, so investment is left blank. The DPR proposes water from the Polavaram-Yeleru industrial allocation, and AirTrunk says it prefers low-water air-cooled designs. The release does not say whether the MW is IT load. Developing Telecoms calls the Rambilli figure IT load capacity, citing an AirTrunk LinkedIn post. No timeline, land area or tenant is given. Coordinates are approximate. Tootipala is a village in Makavarapalem mandal, the same mandal as the ReNew AP Green Data Center site at Makavaripalem. No source links the two projects. 1,400MW is the campus size AirTrunk states for its proposal."
+    },
+    {
+      "id": "in-vtz-airtrunk-rambilli",
+      "name": "AirTrunk Rambilli campus",
+      "campus": "AirTrunk Rambilli campus",
+      "country": "IN",
+      "region": "Andhra Pradesh",
+      "city": "Rambilli, Anakapalli district",
+      "market": "Visakhapatnam",
+      "lat": 17.46,
+      "lng": 82.93,
+      "coords_precision": "district",
+      "stage": "announced",
+      "stage_history": [
+        {
+          "stage": "announced",
+          "date": "2026-11-16",
+          "source": "https://airtrunk.com/airtrunk-signs-mou-for-proposed-data-centre-campuses-in-andhra-pradesh/"
+        }
+      ],
+      "phases": [],
+      "power": {
+        "planned_mw": 400,
+        "live_mw": null,
+        "mw_basis": "unstated"
+      },
+      "power_cost": {
+        "usd_per_kwh": null,
+        "source": "country_tariff"
+      },
+      "investment": null,
+      "operator": {
+        "name": "AirTrunk",
+        "type": "colo",
+        "group": "AirTrunk"
+      },
+      "funders": [
+        {
+          "name": "Blackstone",
+          "type": "pe",
+          "role": "equity"
+        },
+        {
+          "name": "CPP Investments",
+          "type": "pension",
+          "role": "equity"
+        }
+      ],
+      "clients": [],
+      "ai_status": "unknown",
+      "ai_evidence": "",
+      "sources": [
+        {
+          "url": "https://airtrunk.com/airtrunk-signs-mou-for-proposed-data-centre-campuses-in-andhra-pradesh/",
+          "title": "AirTrunk signs MoU for proposed data centre campuses in Andhra Pradesh",
+          "date": "2026-11-16",
+          "publisher": "AirTrunk"
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/21131-airtrunk-signs-mou-for-two-data-centre-projects-in-andhra-pradesh.html",
+          "title": "AirTrunk signs MoU for two data centre projects in Andhra Pradesh",
+          "date": "2026-11-16",
+          "publisher": "Developing Telecoms"
+        },
+        {
+          "url": "https://www.businesstoday.in/latest/corporate/story/blackstone-backed-airtrunk-plans-rs1-03-lakh-crore-investment-in-andhra-pradesh-for-two-data-centre-campuses-567467-2026-11-14",
+          "title": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses",
+          "date": "2026-11-14",
+          "publisher": "Business Today"
+        },
+        {
+          "url": "https://w.media/airtrunk-planning-1-8-gw-of-data-center-capacity-in-andhra-pradesh/",
+          "title": "AirTrunk planning 1.8 GW of data center capacity in Andhra Pradesh",
+          "date": "2026-11-16",
+          "publisher": "W.Media"
+        }
+      ],
+      "water_cooling": [
+        {
+          "source_type": "industrial_raw",
+          "supplier": "Polavaram-Yeleru industrial water allocation (proposed in the DPR)",
+          "volume": null,
+          "cooling": "air",
+          "cooling_note": "AirTrunk says it prioritises low-water air-cooled technologies for the proposed campuses.",
+          "pue_design": null,
+          "wue": null,
+          "date": "2026-11-16",
+          "note": "Proposal stage. Not yet approved.",
+          "evidence": "confirmed",
+          "basis": null,
+          "source": {
+            "url": "https://airtrunk.com/airtrunk-signs-mou-for-proposed-data-centre-campuses-in-andhra-pradesh/",
+            "title": "AirTrunk signs MoU for proposed data centre campuses in Andhra Pradesh",
+            "date": "2026-11-16",
+            "publisher": "AirTrunk"
+          }
+        }
+      ],
+      "last_verified": "2026-11-18",
+      "notes": "AirTrunk signed an MoU with the Andhra Pradesh government for two proposed campuses in Anakapalli district, 400MW at Rambilli and 1,400MW at Tootipala. AirTrunk has submitted a detailed project report and the proposal still needs state approvals. Bloomberg, via Business Today, puts the combined investment at about Rs 1.03 lakh crore (US$11 billion). AirTrunk's release gives no figure and no split by campus, so investment is left blank. The DPR proposes water from the Polavaram-Yeleru industrial allocation, and AirTrunk says it prefers low-water air-cooled designs. The release does not say whether the MW is IT load. Developing Telecoms calls the Rambilli figure IT load capacity, citing an AirTrunk LinkedIn post. No timeline, land area or tenant is given. Coordinates are approximate. Rambilli also hosts the CtrlS Anakapalle row (APIIC Industrial Park). This is a separate operator and project. The exact plot is not named."
     }
   ]
 }
